@@ -1,14 +1,13 @@
 "use client";
 import { HeroImage } from "@generated/images/myImages";
 import { classes } from "@libs/classes";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 const cn = (str: string) => classes(`home-` + str);
 
 const Home = () => {
   const t = useTranslations("home");
-  const { h1: H1, p } = motion;
+  // const { h1: H1, p } = motion;
   if (typeof document !== "undefined") {
     console.count("check render");
 
@@ -29,7 +28,7 @@ const Home = () => {
         <HeroImage />
       </div>
       <div className={cn("typography")}>
-        <H1 className={cn("title")}>{t("title")}</H1>
+        <h1 className={cn("title")}>{t("title")}</h1>
         <p className={cn("description")}>{t("description")}</p>
         <button className={`${cn("button")} btn`}>{t("button")}</button>
       </div>

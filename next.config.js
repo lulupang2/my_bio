@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
+const withSass = require("@zeit/next-sass");
 
 const nextConfig = {
   experimental: {
@@ -7,8 +8,7 @@ const nextConfig = {
   },
   //sass 설정
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-    modules: true,
+    includePaths: [path.join(__dirname, "src/styles")],
   },
 
   //svgr 설정

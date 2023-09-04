@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import "./styles/styles/base/reset";
+@import "./styles/base/variables";
+@import "./styles/base/mixins";
+@import "./styles/base/base";
+// @import "./styles/base/themes";
+
+// @import "./styles/layouts/header";
+// @import "./styles/layouts/footer";
+@import "./styles/layouts/main";
+@import "./styles/layouts/section";
+// @import "./styles/layouts/aside";
+
+@import "./styles/components/button";
+// @import "./styles/components/input";
+// @import "./styles/components/textarea";
+// @import "./styles/components/label";
+// @import "./styles/components/checkbox";
+// @import "./styles/components/radio";
+
+@import "./styles/pages/home";
+@import "./styles/pages/about";
+// @import "./styles/pages/contact";
