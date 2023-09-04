@@ -1,11 +1,12 @@
 "use client";
-import { HeroImage } from "@generated/images/myImages";
-import { classes } from "@libs/classes";
+import { HeroImage } from "@generated/images/";
+import clsx from "clsx";
 import { useTranslations } from "next-intl";
-
-const cn = (str: string) => classes(`home-` + str);
+import styles from "./index.module.scss";
+const cx = clsx.bind(styles);
 
 const Home = () => {
+  const cn = (str: string) => cx(`home-` + str);
   const t = useTranslations("home");
   // const { h1: H1, p } = motion;
   if (typeof document !== "undefined") {

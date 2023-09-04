@@ -1,6 +1,49 @@
 .about {
   &-container {
-    border: 1px solid salmon;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  &-images {
+    flex-grow: 1;
+  }
+  &-image {
+    transform: none;
+    opacity: 1;
+    transition: all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;
+    width: 100%;
+    &-hidden {
+      transform: translateX(120%);
+      opacity: 0;
+    }
+  }
+  &-contents {
+    flex: 1 0;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    p {
+      @include text-title-thin();
+    }
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+      @include text-title-regular();
+      span {
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+    h3 {
+      @include text-title-thin();
+      span {
+        color: $secondary-color;
+        font-weight: 700;
+      }
+    }
   }
 }

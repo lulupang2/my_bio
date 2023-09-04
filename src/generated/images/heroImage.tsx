@@ -1,6 +1,7 @@
+import { type } from "os";
 import * as React from "react";
 import { SVGProps } from "react";
-export const HeroImage = (props: SVGProps<SVGSVGElement>) => (
+const HeroImage = (props: SVGProps<SVGSVGElement>) => (
   <svg
     className="animated"
     id="freepik_stories-programming"
@@ -3321,3 +3322,5 @@ export const HeroImage = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
+
+export default HeroImage;
