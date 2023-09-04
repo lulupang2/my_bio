@@ -1,3 +1,4 @@
+import Analytics from "@libs/analytics";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -13,6 +14,22 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Hello!👋",
   description: "This is my personal website.",
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    url: "https://bio.jisung.pro",
+    siteName: "🐒🐒🐒🐒🐒🐒🐒",
+    title: "Hello!👋",
+    description: "This is my personal website.",
+    images: [
+      {
+        url: "https://tpucdn.com/forums/data/avatars/l/190/190965.jpg",
+        width: 400,
+        height: 400,
+        alt: "bio.jisung.pro",
+      },
+    ],
+  },
 };
 export default async function LocaleLayout({
   children,
@@ -31,6 +48,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
