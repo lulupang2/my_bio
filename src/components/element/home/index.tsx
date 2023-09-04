@@ -1,10 +1,8 @@
 "use client";
-import React from "react";
-import clsx from "clsx";
 import { HeroImage } from "@generated/images/myImages";
 import { classes } from "@libs/classes";
-import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const cn = (str: string) => classes(`home-` + str);
 
