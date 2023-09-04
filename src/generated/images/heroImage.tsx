@@ -1,5 +1,3 @@
-import { type } from "os";
-import * as React from "react";
 import { SVGProps } from "react";
 const HeroImage = (props: SVGProps<SVGSVGElement>) => (
   <svg

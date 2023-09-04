@@ -1,13 +1,12 @@
 "use client";
 import { AboutImage } from "@generated/images";
 import clsx from "clsx";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef } from "react";
 import styles from "./index.module.scss";
 
 const cx = clsx.bind(styles);
 const About = () => {
-  const { div: Div } = motion;
   const observerRef = useRef(null);
   const isInView = useInView(observerRef);
   const cn = (str: string) => cx(`about-` + str);
