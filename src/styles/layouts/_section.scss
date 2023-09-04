@@ -1,0 +1,38 @@
+section {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  z-index: 1;
+  //   &::before {
+  //     content: '';
+  //     z-index: -1;
+  //     width: 13vw;
+  //     height: 13vw;
+  //     position: fixed;
+  //     border-radius: 50%;
+  //     border: 1vw solid var(--color-text);
+  //     animation: upstream 2s linear infinite;
+  //     bottom: -5vw;
+  //     left: -5vw;
+  //     filter: blur(10vw);
+  //   }
+  //   &:after {
+  //     content: '';
+  //     z-index: -1;
+  //     width: 10vw;
+  //     height: 10vw;
+  //     position: fixed;
+  //     border: 0.5vw solid var(--color-text);
+  //     border-radius: 50%;
+  //     animation: upstream 9s linear infinite;
+  //     bottom: -5vw;
+  //     right: -5vw;
+  //     filter: blur(5vw);
+  //   }
+}
+
+@keyframes upstream {
+  50% {
+    transform: scale(0.65);
+  }
+}

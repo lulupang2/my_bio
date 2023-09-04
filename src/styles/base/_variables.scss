@@ -1,0 +1,25 @@
+//colors
+
+$primary-color: #08d9d6;
+$secondary-color: #ff2e63;
+$bg-color-1: #252a34;
+$bg-color-2: #eaeaea;
+
+$corporate-purple: rgba(157, 63, 231, 1);
+$corporate-gradient: linear-gradient(
+  to bottom,
+  rgba(157, 63, 231, 0.616) 0%,
+  rgba(96, 32, 147, 0.377) 100%
+);
+$grayscale-black: rgba(26, 20, 31, 1);
+$grayscale-hint-text: rgba(75, 58, 90, 1);
+$grayscale-border: rgba(171, 167, 175, 1);
+$grayscale-disabled: rgba(212, 210, 213, 1);
+$grayscale-spacer: rgba(217, 209, 224, 1);
+$grayscale-spacer-light: rgba(229, 224, 235, 1);
+$grayscale-bg-light-grey: rgba(245, 243, 247, 1);
+$grayscale-white: rgba(255, 255, 255, 1);
+$informing-link: rgba(15, 11, 171, 1);
+$informing-error: rgba(213, 26, 82, 1);
+$informing-attention: rgba(255, 149, 0, 1);
+$informing-approval: rgba(0, 185, 152, 1);

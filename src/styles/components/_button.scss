@@ -1,0 +1,57 @@
+.btn {
+  text-decoration: none;
+  position: relative;
+  background: $secondary-color;
+  color: #ffffffc0;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0.7vw 1vh 1px #ff2e6377;
+  &:hover {
+    cursor: pointer;
+  }
+
+  //클릭시 애니메이션
+  &:active {
+    animation: scale 500ms linear;
+  }
+
+  //애니메이션 처리
+  div {
+    display: flex;
+    span {
+      display: block;
+      backface-visibility: hidden;
+      font-style: normal;
+
+      // i 갯수 생각해봐야할듯
+      $i: 1;
+      @while $i < 12 {
+        &:nth-child(#{$i}) {
+          --duration: #{$i / 20 + s};
+        }
+        $i: $i + 1;
+      }
+    }
+  }
+  &:hover {
+    span {
+      animation: move 500ms linear var(--duration);
+    }
+  }
+}
+
+@keyframes move {
+  45% {
+    transform: translateY(-1vw);
+    text-shadow: 0.1vw 0.5vw 1px #33333370;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,63 @@
+@mixin text-title-bold() {
+  font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  font-weight: bold;
+  word-break: break-word;
+}
+@mixin text-title-thin() {
+  font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+  font-weight: lighter;
+  word-break: break-word;
+}
+@mixin text-title-regular() {
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+  font-weight: thin;
+}
+@mixin text-title-h-4() {
+  font-size: 18px;
+
+  font-weight: 700;
+}
+@mixin text-style-body-txt-body-l() {
+  font-size: 20px;
+
+  font-weight: 400;
+}
+@mixin text-style-body-txt-body-m() {
+  font-size: 18px;
+
+  font-weight: 300;
+}
+@mixin text-style-body-txt-body-m-regular() {
+  font-size: 18px;
+
+  font-weight: 400;
+}
+@mixin text-style-body-txt-body-s() {
+  font-size: 16px;
+
+  font-weight: 300;
+}
+@mixin text-style-body-txt-body-s-regular() {
+  font-size: 16px;
+
+  font-weight: 400;
+}
+@mixin text-style-body-txt-body-xs() {
+  font-size: 14px;
+  font-weight: 400;
+}
+@mixin effect-style-extra-small-shadow() {
+  box-shadow: 0px 10px 15px rgba(211, 192, 214, 0.07);
+}
+@mixin effect-style-small-shadow() {
+  box-shadow: 0px 8px 16px rgba(62, 19, 77, 0.07);
+}
+@mixin effect-style-medium-shadow() {
+  box-shadow: 0px 15px 30px rgba(62, 19, 77, 0.09);
+}
+@mixin effect-style-large-shadow-for-pop-up-windows() {
+  box-shadow: 0px 10px 30px rgba(62, 19, 77, 0.47);
+}
+@mixin effect-style-input-shadow() {
+  box-shadow: inset 0px 4px 5px rgba(33, 1, 38, 0.03);
+}
