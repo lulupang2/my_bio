@@ -1,8 +1,31 @@
-#!/bin/bash
+my-app
 
-#File: tree-md
-
-tree=$(tree -tf --noreport -I '_~' --charset ascii $1 |
-sed -e 's/| \+/ /g' -e 's/[|`]-\+/ _/g' -e 's:\(_ \)\(\(._/\)\([^/]\+\)\):\1[\4](\2):g')
-
-printf "# Project tree\n\n${tree}"
+```
+├── messages
+├── public
+|  └── images
+└── src
+   ├── app
+   |  └── [locale]
+   ├── components
+   |  ├── common
+   |  └── element
+   |     ├── about
+   |     ├── home
+   |     ├── portfolio
+   |     └── topbar
+   ├── constants
+   ├── generated
+   |  ├── fonts
+   |  └── images
+   ├── hooks
+   ├── libs
+   ├── styles
+   |  ├── base
+   |  ├── components
+   |  ├── layouts
+   |  ├── pages
+   |  ├── themes
+   |  └── vendor
+   └── types
+```
