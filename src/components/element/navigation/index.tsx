@@ -1,18 +1,18 @@
+"use client";
 import { classes } from "@libs/classes";
-import { useThemeStore } from "@store/index";
 import { Variants, motion } from "framer-motion";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
-import { ChangeEvent, useEffect, useRef, useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 
 const cn = (str: string) => classes(`nav-` + str);
 
 const NavigationBar = () => {
   //테마
-  const { theme, setTheme } = useThemeStore((state) => state);
-  const onThemeChangeHandler = () => {
-    setTheme(!theme);
-  };
+  // const { theme, setTheme } = useThemeStore((state) => state);
+  // const onThemeChangeHandler = () => {
+  //   setTheme(!theme);
+  // };
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.target.checked
       ? document.documentElement.setAttribute("data-theme", "light")
@@ -24,7 +24,7 @@ const NavigationBar = () => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const onSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
+  const onSelect = (event: any) => {
     const nextLocale = event.target.value;
     startTransition(() => {
       router.replace(pathname, { locale: nextLocale });
@@ -89,7 +89,7 @@ const NavigationBar = () => {
               whileTap={{ scale: 0.97 }}
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen.toString()}
+              {locale.toString()} / {isPending.toString()}
               <DIV
                 variants={{
                   open: { rotate: 180 },
@@ -123,7 +123,13 @@ const NavigationBar = () => {
               style={{ pointerEvents: isOpen ? "auto" : "none" }}
             >
               <LI variants={itemVariants}>ENGLISH🇺🇸</LI>
-              <LI variants={itemVariants}>한글🇰🇷</LI>
+              <LI
+                variants={itemVariants}
+                value={"ko"}
+                onClick={(e) => onSelect(e)}
+              >
+                한글🇰🇷
+              </LI>
             </UL>
           </DIV>
           <div className={cn(`action-theme`)}>
