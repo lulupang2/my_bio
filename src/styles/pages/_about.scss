@@ -6,21 +6,26 @@
   }
   &-images {
     flex-grow: 1;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+
+    place-items: center;
   }
   &-image {
+    width: 100%;
     transform: none;
     opacity: 1;
     transition: all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;
-    width: 100%;
     &-hidden {
-      transform: translateX(120%);
+      transform: translateX(200%);
       opacity: 0;
     }
   }
   &-contents {
     flex: 1 0;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     gap: 2rem;
     p {
       @include text-title-thin();

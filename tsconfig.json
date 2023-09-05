@@ -28,7 +28,8 @@
       "@generated/*": ["generated/*"],
       "@hooks/*": ["hooks/*"],
       "@libs/*": ["libs/*"],
-      "@types/*": ["types/*"]
+      "@types/*": ["types/*"],
+      "@store/*": ["store/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

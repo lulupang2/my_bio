@@ -1,13 +1,15 @@
-html {
-  background-color: var(--color-background);
-  color: var(--color-text);
-}
 html[data-theme="light"] {
-  --color-text: #{$black-color};
-  --color-background: #{$white-color};
+  color-scheme: light;
+  --text: #{$black-color};
+  --background: #{$white-color};
 }
 
 html[data-theme="dark"] {
-  --color-text: #{$white-color};
-  --color-background: #{$black-color};
+  color-scheme: dark;
+  --text: #{$white-color};
+  --background: #{$black-color};
+}
+html {
+  background-color: var(--background);
+  color: var(--text);
 }

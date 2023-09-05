@@ -1,4 +1,5 @@
 import Analytics from "@libs/analytics";
+
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -9,9 +10,10 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return [{ locale: "ko" }, { locale: "en" }];
+  return [{ locale: "ko" }];
 }
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bio.jisung.pro"),
   title: "Hello!👋",
   description: "This is my personal website.",
   openGraph: {
@@ -43,7 +45,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} data-theme="dark">
+    <html lang={locale} data-theme={"dark"}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

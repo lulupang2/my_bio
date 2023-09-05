@@ -1,0 +1,111 @@
+.nav {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-logo {
+    border: 2px solid #cf13fa;
+    //
+    flex: 1;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+  &-menu {
+    flex: 7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    li {
+      flex-basis: 10vw;
+      text-align: center;
+      transition: all 0.3s linear;
+      position: relative;
+      padding: 0.5rem 0;
+      a {
+        text-decoration: none;
+        color: var(--text);
+        font-size: 1.2rem;
+        font-weight: 700;
+        transition: all 0.3s linear;
+        text-transform: capitalize;
+        &:hover {
+          color: #ff2e63;
+        }
+      }
+      &[data-set="active"] {
+        > a {
+          color: $primary-color;
+          text-transform: uppercase;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: $primary-color;
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
+  &-action {
+    border: 2px solid #ff88aa;
+    //
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    &-lang {
+      color: var(--text);
+
+      ul {
+        background-color: var(--text);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      li {
+        color: var(--background);
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      ul,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+      }
+      button {
+        -webkit-appearance: button;
+        background-color: var(--text);
+        color: var(--background);
+        border: 1px solid var(--text);
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &-theme {
+      input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
