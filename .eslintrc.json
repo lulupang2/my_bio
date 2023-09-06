@@ -1,6 +1,7 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "next",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
   ],
@@ -13,5 +14,10 @@
   },
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
-  "root": true
+  "root": true,
+  "settings": {
+    "react": {
+      "vesion": "latest"
+    }
+  }
 }

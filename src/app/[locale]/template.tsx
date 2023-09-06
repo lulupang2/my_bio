@@ -12,7 +12,7 @@ const Template = ({ children }: { children: React.ReactNode }) => {
     <main>
       <NavigationBar />
       <section>{children}</section>
-      <footer>푸터</footer>
+      <footer style={{ height: "200vh" }}>푸터</footer>
     </main>
   );
 };

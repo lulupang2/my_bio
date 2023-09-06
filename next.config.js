@@ -5,6 +5,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  //외부 이미지 도메인
+  images: {
+    domains: ["picsum.photos"],
+  },
   //sass 설정
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
