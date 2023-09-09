@@ -1,17 +1,30 @@
 .portfolio {
   &-container {
+    position: relative;
+    height: 200vh;
+  }
+  &-wrapper {
+    height: 90vh;
+    // background: #f34921;
+    top: 0;
+    position: sticky;
     display: flex;
     flex-direction: column;
-
-    & > * {
-      border: 1px solid $white-color;
-    }
   }
 
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #000;
+    flex: 1;
+
+    height: clamp(10vh, 10vh + 5vw, 15vh);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
     &-title {
       font-size: 2rem;
       font-weight: bold;
@@ -34,30 +47,76 @@
         }
       }
     }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
+
   &-contents {
-    max-height: 50vh;
-    overflow: scroll;
     display: flex;
   }
+
   &-thumb {
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    position: sticky;
     flex: 1;
+    left: 1rem;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
     &-image {
       width: 100%;
-      object-fit: contain;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 50px;
+      aspect-ratio: 16/9;
     }
   }
   &-item {
     flex: 1;
+    right: 0;
+    padding: 2vw;
+    z-index: 1;
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       border: 1px solid $white-color;
       min-height: 15vh;
     }
+    &-title {
+      @include text-title-thin();
+
+      flex: 7;
+    }
+    &-box {
+      @include text-title-thin();
+      text-transform: uppercase;
+
+      flex: 3;
+    }
   }
+
+  &-test {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+  }
+}
+
+.wrap {
+  height: 100dvh;
+  top: 0;
+  position: sticky;
+  column-count: 4;
+  column-gap: 10%;
+  // gap: calc(1dvw + 1rem);
 }

@@ -2,8 +2,9 @@
 
 import { classes } from "@libs/classes";
 import { IMG_URL } from "@libs/utils";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useScroll, useTransform, motion, useSpring } from "framer-motion";
+import Image from "next/image";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 type PortfolioType = {
   id: number;
   title: string;
@@ -43,7 +44,10 @@ const Portfolio = () => {
     target: targetRef,
     layoutEffect: false,
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const transform = useTransform(scrollYProgress, [0, 1], ["1%", "-45%"]);
+  const physics = { damping: 15, mass: 0.27, stiffness: 55 }; // easing of smooth scroll
+
+  const y = useSpring(transform, physics);
 
   // 데이터 임시
   const [filterData, setFilterData] = useState<PortfolioType[]>([]);
@@ -72,36 +76,38 @@ const Portfolio = () => {
             <button className={cn("header-filter-item")}>type2</button>
           </div>
         </div>
-        <div className={cn("contents")}>
-          <div className={cn("thumb")}>
-            {selectedData && (
-              <div
-                style={{ backgroundImage: `url(${selectedData.img[0]})` }}
-                className={cn("thumb-image")}
-              />
-            )}
-          </div>
-          <motion.div style={{ y }} className={cn("item")}>
-            {filterData.map((item, index) => (
-              <div
-                className={cn("item-wrapper")}
-                key={index}
-                onClick={() => onHover(item)}
-              >
-                <div className={cn("item-title")}>{item.title}</div>
-                <div className={cn("item-box")}>
-                  {item.stack.map((el, i) => (
-                    <div key={i} className={cn("item-library")}>
-                      {el}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </motion.div>
+        {/* <div className={cn("contents")}> */}
+
+        <div className={cn("thumb")}>
+          {selectedData && (
+            <img
+              className={cn("thumb-image")}
+              src={selectedData.img[0]}
+              alt=""
+              loading="lazy"
+            />
+          )}
         </div>
-        <div />
       </div>
+      <motion.div style={{ y }} className={cn("item")}>
+        {filterData.map((item, index) => (
+          <div
+            className={cn("item-wrapper")}
+            key={index}
+            onClick={() => onHover(item)}
+          >
+            <div className={cn("item-title")}>{item.title}</div>
+            <div className={cn("item-box")}>
+              {item.stack.map((el, i) => (
+                <div key={i} className={cn("item-library")}>
+                  {el}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+        {/* </div> */}
+      </motion.div>
     </article>
   );
 };

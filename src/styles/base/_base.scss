@@ -11,5 +11,17 @@ html[data-theme="dark"] {
 }
 html {
   background-color: var(--background);
+  // background: var(--background)
+  //   radial-gradient(circle, var(--text) 5%, var(--background) 95%) repeat scroll
+  //   0 0;
   color: var(--text);
+}
+
+@supports (position: sticky) or (position: -webkit-sticky) {
+  .sticky {
+    position: -webkit-sticky; /* 사파리 브라우저 지원 */
+    position: sticky;
+    top: 4px;
+    background: red;
+  }
 }
