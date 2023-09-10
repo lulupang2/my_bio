@@ -15,6 +15,12 @@ html {
   //   radial-gradient(circle, var(--text) 5%, var(--background) 95%) repeat scroll
   //   0 0;
   color: var(--text);
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @supports (position: sticky) or (position: -webkit-sticky) {

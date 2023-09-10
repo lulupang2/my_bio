@@ -7,7 +7,10 @@ const nextConfig = {
   },
   //외부 이미지 도메인
   images: {
-    domains: ["picsum.photos"],
+    domains: [
+      "picsum.photos",
+      "ji-springboot-bucket.s3.ap-northeast-2.amazonaws.com",
+    ],
   },
   //sass 설정
   sassOptions: {

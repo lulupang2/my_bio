@@ -1,9 +1,9 @@
 "use client";
 
 import { classes } from "@libs/classes";
-import { IMG_URL } from "@libs/utils";
+import { IMG_URL, THUMB_URL } from "@libs/utils";
 import { motion, useScroll, useTransform } from "framer-motion";
-import _ from "lodash";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 type PortfolioType = {
   id: number;
@@ -13,6 +13,7 @@ type PortfolioType = {
   tags: string;
   desc: string;
   device: string;
+  thumb?: string;
   stack: string[];
   img: string[];
 };
@@ -22,7 +23,7 @@ const Portfolio = () => {
   const [originData] = useState<PortfolioType[]>(TEMP);
   const [filterData, setFilterData] = useState<PortfolioType[]>([]);
   const [selectedData, setSelectedData] = useState<PortfolioType>();
-  // const [selectedType, setSelectedType] = useState<string>("");
+  const [selectedType, setSelectedType] = useState<string>("");
 
   useEffect(() => {
     const data = _.cloneDeep(originData);
@@ -34,8 +35,10 @@ const Portfolio = () => {
     let copyData = [];
     if (tag) {
       copyData = data.filter((item) => item.tags === tag);
+      setSelectedType(tag);
     } else {
       copyData = data;
+      setSelectedType("");
     }
     setFilterData(copyData);
   };
@@ -48,7 +51,7 @@ const Portfolio = () => {
     target: targetRef,
     layoutEffect: false,
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
 
   const onHover = _.debounce((data: any) => {
     setSelectedData(data);
@@ -66,8 +69,8 @@ const Portfolio = () => {
               type="radio"
               name="filter"
               id="typeAll"
-              defaultChecked
               value={""}
+              checked={selectedType === ""}
               onChange={(e) => onFilter(e.target.value)}
             />
             <label htmlFor="typeAll">All</label>
@@ -76,6 +79,7 @@ const Portfolio = () => {
               name="filter"
               id="typeWork"
               value={"work"}
+              checked={selectedType === "work"}
               onChange={(e) => onFilter(e.target.value)}
             />
             <label htmlFor="typeWork">Work</label>
@@ -84,6 +88,7 @@ const Portfolio = () => {
               name="filter"
               id="typeHobby"
               value={"hobby"}
+              checked={selectedType === "hobby"}
               onChange={(e) => onFilter(e.target.value)}
             />
             <label htmlFor="typeHobby">Hobby</label>
@@ -97,9 +102,16 @@ const Portfolio = () => {
                   <h1>{selectedData.title}</h1>
                 </div>
                 <div
-                  style={{ backgroundImage: `url(${selectedData.img[0]})` }}
+                  // style={{ backgroundImage: `url(${selectedData.img[0]})` }}
                   className={cn("thumb-image")}
-                />
+                >
+                  <Image
+                    width={1600}
+                    height={1200}
+                    src={selectedData.thumb!}
+                    alt={selectedData.title}
+                  />
+                </div>
               </React.Fragment>
             )}
           </div>
@@ -138,6 +150,7 @@ const TEMP: PortfolioType[] = [
     desc: `React Native 기반으로 Android와 IOS 모바일 앱을 개발했습니다. 기존 출시된 모바일 어플을 디자인 리뉴얼 하는 작업이었으나 소스코드 유실로 typescript로 새로 진행`,
     stack: ["react", "reactnative", "typescript"],
     device: "mobile",
+    thumb: `${THUMB_URL}/thumb_t.webp`,
     img: [
       `${IMG_URL}/t1.png`,
       `${IMG_URL}/t2.png`,
@@ -154,6 +167,7 @@ const TEMP: PortfolioType[] = [
     device: "web",
 
     stack: ["react", "reactnative"],
+    thumb: `${THUMB_URL}/thumb_k.webp`,
     img: [
       `${IMG_URL}/k1.png`,
       `${IMG_URL}/k2.png`,
@@ -172,6 +186,7 @@ const TEMP: PortfolioType[] = [
     전문가 매칭 플랫폼 전문가들의 여러 분야에서 매칭 가능하도록 개발된 플랫폼
 
 `,
+    thumb: `${THUMB_URL}/thumb_w.webp`,
     stack: ["react", "nextjs"],
     img: [
       `${IMG_URL}/w1.png`,
@@ -193,7 +208,7 @@ const TEMP: PortfolioType[] = [
 어플리케이션에 등록후 보상을 지급받는 리액트 네이티브 어플리케이션
     `,
     stack: ["react", "nextjs"],
-
+    thumb: `${THUMB_URL}/thumb_g.webp`,
     img: [
       `${IMG_URL}/g1.png`,
       `${IMG_URL}/g2.png`,
@@ -209,6 +224,7 @@ const TEMP: PortfolioType[] = [
     member: `고객사측에서 서버,기획,디자인 작업
     회사 내부 프론트엔드 개발자 3명`,
     tags: "hobby",
+    thumb: `${THUMB_URL}/thumb_b.webp`,
 
     desc: `
     고객사측에서 초반 설정 및 프로젝트가 어느정도 진행된 상태로 넘어온 케이스
