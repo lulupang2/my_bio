@@ -59,7 +59,7 @@ const Portfolio = () => {
       <div className={cn("wrapper")}>
         <div className={cn("header")}>
           <div className={cn("header-title")}>
-            <h1>{selectedType}</h1>
+            <h1>my work</h1>
           </div>
           <div className={cn("header-filter")}>
             <input
