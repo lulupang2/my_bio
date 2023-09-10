@@ -3,6 +3,7 @@
 import { classes } from "@libs/classes";
 import { IMG_URL, THUMB_URL } from "@libs/utils";
 import { motion, useScroll, useTransform } from "framer-motion";
+import _ from "lodash";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 type PortfolioType = {
