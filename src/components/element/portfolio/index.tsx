@@ -1,8 +1,15 @@
 "use client";
 
+import Modal from "@components/common/modal";
 import { classes } from "@libs/classes";
 import { IMG_URL, THUMB_URL } from "@libs/utils";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useModalActions, useModalState } from "@store/index";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import _ from "lodash";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
@@ -57,13 +64,29 @@ const Portfolio = () => {
   const onHover = _.debounce((data: any) => {
     setSelectedData(data);
   }, 100);
+  const setModal = useModalActions();
+  const openModal = () => setModal(true);
+  const closeModal = () => setModal(false);
+  const isModalOpen = useModalState();
+  const modalOpen = useModalState();
 
   return (
     <article className={cn("container")} ref={targetRef}>
+      <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
+        {modalOpen && <Modal handleClose={closeModal}>a</Modal>}
+      </AnimatePresence>
       <div className={cn("wrapper")}>
         <div className={cn("header")}>
           <div className={cn("header-title")}>
-            <h1>my work</h1>
+            {/* <h1>my work</h1> */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="save-button"
+              onClick={() => (isModalOpen ? closeModal() : openModal())}
+            >
+              Launch modal
+            </motion.button>
           </div>
           <div className={cn("header-filter")}>
             <input

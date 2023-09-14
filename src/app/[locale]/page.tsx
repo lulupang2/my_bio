@@ -1,3 +1,4 @@
+"use client";
 import About from "@components/element/about";
 import Home from "@components/element/home";
 import Portfolio from "@components/element/portfolio";
