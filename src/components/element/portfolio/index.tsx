@@ -74,7 +74,7 @@ const Portfolio = () => {
   return (
     <article className={cn("container")} ref={targetRef}>
       <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
-        {modalOpen && <Modal handleClose={closeModal}>a</Modal>}
+        {modalOpen && <Modal handleClose={closeModal} />}
       </AnimatePresence>
       <div className={cn("wrapper")}>
         <div className={cn("header")}>
