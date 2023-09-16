@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Backdrop from "./backdrop";
+import WorkModal from "./workModal";
 
 type Props = {
   handleClose: () => void;
-  children: React.ReactNode;
 };
 
 const dropIn = {
@@ -27,18 +27,18 @@ const dropIn = {
   },
 };
 
-const Modal = ({ handleClose, children }: Props) => {
+const Modal = ({ handleClose }: Props) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()} // Prevent click from closing modal
-        className="modal orange-gradient"
+        className="modal"
         variants={dropIn}
         initial="hidden"
         animate="visible"
         exit="exit"
       >
-        {children}
+        <WorkModal close={handleClose} />
       </motion.div>
     </Backdrop>
   );

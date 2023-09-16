@@ -1,13 +1,17 @@
 html[data-theme="light"] {
   color-scheme: light;
   --text: #{$black-color};
+  --textAlpha: #{$black-color}75;
   --background: #{$white-color};
+  --backgroundAlpha: #{$white-color}75;
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
   --text: #{$white-color};
+  --textAlpha: #{$white-color}75;
   --background: #{$black-color};
+  --backgroundAlpha: #{$black-color}75;
 }
 html {
   background-color: var(--background);
@@ -15,6 +19,7 @@ html {
   //   radial-gradient(circle, var(--text) 5%, var(--background) 95%) repeat scroll
   //   0 0;
   color: var(--text);
+  font-family: "Dovemayo_gothic", "San Francisco", sans-serif;
 
   -ms-overflow-style: none;
   scrollbar-width: none;

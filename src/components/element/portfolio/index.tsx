@@ -1,9 +1,14 @@
 "use client";
 
 import Modal from "@components/common/modal";
+import { WorkModalProps } from "@components/common/modal/workModal";
 import { classes } from "@libs/classes";
 import { IMG_URL, THUMB_URL } from "@libs/utils";
-import { useModalActions, useModalState } from "@store/index";
+import {
+  useModalActions,
+  useModalDataActions,
+  useModalState,
+} from "@store/index";
 import {
   AnimatePresence,
   motion,
@@ -13,24 +18,16 @@ import {
 import _ from "lodash";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-type PortfolioType = {
-  id: number;
-  title: string;
-  date: string;
-  member?: string;
-  tags: string;
-  desc: string;
-  device: string;
-  thumb?: string;
-  stack: string[];
-  img: string[];
-};
 
+//TO-DO: 작업정보를 전역상태나 useState 하나만 써서 관리해야할듯
+//TO-DO: 섬네일 이미지 preload?
+//TO-DO: 애니메이숀 적용하기
+//TO-DO: stack 아이콘 추가하기
 const cn = (str: string) => classes(`portfolio-` + str);
 const Portfolio = () => {
-  const [originData] = useState<PortfolioType[]>(TEMP);
-  const [filterData, setFilterData] = useState<PortfolioType[]>([]);
-  const [selectedData, setSelectedData] = useState<PortfolioType>();
+  const [originData] = useState<WorkModalProps[]>(TEMP);
+  const [filterData, setFilterData] = useState<WorkModalProps[]>([]);
+  const [selectedData, setSelectedData] = useState<WorkModalProps>();
   const [selectedType, setSelectedType] = useState<string>("");
 
   useEffect(() => {
@@ -69,7 +66,11 @@ const Portfolio = () => {
   const closeModal = () => setModal(false);
   const isModalOpen = useModalState();
   const modalOpen = useModalState();
-
+  const setModaldata = useModalDataActions();
+  const onThumbClickHandler = (data: WorkModalProps) => {
+    openModal();
+    setModaldata(data);
+  };
   return (
     <article className={cn("container")} ref={targetRef}>
       <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
@@ -119,16 +120,16 @@ const Portfolio = () => {
           </div>
         </div>
         <div className={cn("contents")}>
-          <div className={cn("thumb")}>
+          <div
+            className={cn("thumb")}
+            onClick={() => onThumbClickHandler(selectedData!)}
+          >
             {selectedData && (
               <React.Fragment>
                 <div className={cn("thumb-title")}>
                   <h1>{selectedData.title}</h1>
                 </div>
-                <div
-                  // style={{ backgroundImage: `url(${selectedData.img[0]})` }}
-                  className={cn("thumb-image")}
-                >
+                <div className={cn("thumb-image")}>
                   <Image
                     width={1600}
                     height={1200}
@@ -165,11 +166,12 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-const TEMP: PortfolioType[] = [
+const TEMP: WorkModalProps[] = [
   {
     id: 1,
     title: "블록체인 기반 쇼핑몰 플랫폼",
-    date: "(2022.03 ~ 2022.04)",
+    date: "2022.03~2022.04",
+    members: "1명",
     tags: "work",
     desc: `React Native 기반으로 Android와 IOS 모바일 앱을 개발했습니다. 기존 출시된 모바일 어플을 디자인 리뉴얼 하는 작업이었으나 소스코드 유실로 typescript로 새로 진행`,
     stack: ["react", "reactnative", "typescript"],
@@ -185,12 +187,12 @@ const TEMP: PortfolioType[] = [
   {
     id: 2,
     title: "이더리움 기반 전문 쇼핑몰 플랫폼",
-    date: "(2022.03 ~ 2022.04)",
+    date: "2022.03~2022.04",
+    members: "1명",
     tags: "work",
     desc: "React를 이용하여 관리 페이지 CMS 프론트엔드 개발 작업을 수행했습니다. REST API 기반으로 회원 관리 및 토큰 정보 관리 주문 관리 기능 등 구현",
     device: "web",
-
-    stack: ["react", "reactnative"],
+    stack: ["react"],
     thumb: `${THUMB_URL}/thumb_k.webp`,
     img: [
       `${IMG_URL}/k1.png`,
@@ -205,13 +207,12 @@ const TEMP: PortfolioType[] = [
     title: "전문가 매칭 플랫폼",
     tags: "work",
     device: "web",
-
+    members: "3명",
     desc: `
     전문가 매칭 플랫폼 전문가들의 여러 분야에서 매칭 가능하도록 개발된 플랫폼
-
 `,
     thumb: `${THUMB_URL}/thumb_w.webp`,
-    stack: ["react", "nextjs"],
+    stack: ["react", "nextjs", "typescript"],
     img: [
       `${IMG_URL}/w1.png`,
       `${IMG_URL}/w2.png`,
@@ -225,7 +226,7 @@ const TEMP: PortfolioType[] = [
     date: "(2022.06 ~ 2022.09)",
     tags: "work",
     device: "mobile",
-
+    members: "1명",
     desc: `공공 와이파이 단말기 접속 보상 어플리케이션
     전국에 배치된 공공와이파이 단말기에 접속
     캡티브 포탈에서 나오는 쿠폰을 공공팡
@@ -245,7 +246,7 @@ const TEMP: PortfolioType[] = [
     title: "NFT 기반 콘서트 예약 플랫폼",
     date: "(2022.11 ~ 2022.12)",
     device: "mobile",
-    member: `고객사측에서 서버,기획,디자인 작업
+    members: `고객사측에서 서버,기획,디자인 작업
     회사 내부 프론트엔드 개발자 3명`,
     tags: "hobby",
     thumb: `${THUMB_URL}/thumb_b.webp`,

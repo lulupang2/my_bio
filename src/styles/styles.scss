@@ -4,6 +4,7 @@
 @import "./base/variables";
 @import "./base/mixins";
 @import "./base/base";
+@import "./base/fonts";
 // @import "./base/themes";
 
 @import "./layouts/header";
@@ -23,3 +24,5 @@
 @import "./pages/about";
 @import "./pages/navigation";
 @import "./pages/portfolio";
+
+@import "./vendor/swiper";

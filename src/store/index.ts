@@ -1,3 +1,4 @@
+import { WorkModalProps } from "@components/common/modal/workModal";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -8,6 +9,8 @@ type ThemeProps = {
 type ModalProps = {
   isModalOpen: boolean;
   toggleModal: (boolean: boolean) => void;
+  data: WorkModalProps;
+  setModalData: (data: WorkModalProps) => void;
 };
 export const useThemeStore = create(
   persist<ThemeProps>(
@@ -20,10 +23,23 @@ export const useThemeStore = create(
     }
   )
 );
+const initialData: WorkModalProps = {
+  date: "",
+  title: "",
+  tags: "",
+  device: "",
+  members: "",
+  desc: ``,
+  thumb: ``,
+  stack: [],
+  img: [],
+};
 
 export const useModalStore = create<ModalProps>((set) => ({
+  data: initialData,
   isModalOpen: false,
   toggleModal: (e) => set(() => ({ isModalOpen: e })),
+  setModalData: (data) => set(() => ({ data })),
 }));
 
 export const useThemeState = () => useThemeStore((state) => state.theme);
@@ -32,3 +48,6 @@ export const useThemeActions = () => useThemeStore((state) => state.setTheme);
 export const useModalState = () => useModalStore((state) => state.isModalOpen);
 export const useModalActions = () =>
   useModalStore((state) => state.toggleModal);
+export const useModalData = () => useModalStore((state) => state.data);
+export const useModalDataActions = () =>
+  useModalStore((state) => state.setModalData);
