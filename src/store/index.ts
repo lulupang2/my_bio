@@ -24,6 +24,7 @@ export const useThemeStore = create(
   )
 );
 const initialData: WorkModalProps = {
+  id: 0,
   date: "",
   title: "",
   tags: "",
