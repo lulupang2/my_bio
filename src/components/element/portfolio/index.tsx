@@ -64,7 +64,7 @@ const Portfolio = () => {
   const setModal = useModalActions();
   const openModal = () => setModal(true);
   const closeModal = () => setModal(false);
-  const isModalOpen = useModalState();
+  // const isModalOpen = useModalState();
   const modalOpen = useModalState();
   const setModaldata = useModalDataActions();
   const onThumbClickHandler = (data: WorkModalProps) => {
