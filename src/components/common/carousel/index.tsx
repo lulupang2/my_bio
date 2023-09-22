@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { Fragment } from "react";
 
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
@@ -6,13 +7,11 @@ import { Swiper as SwiperType } from "swiper/types";
 
 const Carousel = ({ imgs, thumb }: { thumb: string; imgs: string[] }) => {
   const [thumbsSwiper, setThumbsSwiper] = React.useState(null);
-  const handleSwiper = (swiper: SwiperType) => {
-    setThumbsSwiper(swiper as any);
-  };
+  const handleSwiper = (swiper: SwiperType) => setThumbsSwiper(swiper as any);
+
   return (
     <Fragment>
       <Swiper
-        loop={true}
         spaceBetween={10}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
@@ -20,29 +19,53 @@ const Carousel = ({ imgs, thumb }: { thumb: string; imgs: string[] }) => {
         className="mainSwiper"
       >
         <SwiperSlide>
-          <img src={thumb} alt={"work images"} />
+          <Image
+            src={thumb}
+            alt={"work images"}
+            fill
+            className="skeleton"
+            onLoadingComplete={(image) => image.classList.remove("skeleton")}
+          />
         </SwiperSlide>
         {imgs.map((img, index) => (
           <SwiperSlide key={index}>
-            <img src={img} alt={"work images"} />
+            <Image
+              src={img}
+              alt={"work images"}
+              fill
+              className="skeleton"
+              onLoadingComplete={(image) => image.classList.remove("skeleton")}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
       <Swiper
         onSwiper={handleSwiper}
-        loop={true}
-        slidesPerView={4}
-        freeMode={true}
+        slidesPerView={3.5}
         watchSlidesProgress={true}
+        spaceBetween={10}
+        freeMode={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="thumbSwiper"
       >
         <SwiperSlide>
-          <img src={thumb} alt={"work thumbnail images"} />
+          <Image
+            src={thumb}
+            alt={"work thumbnail images"}
+            fill
+            className="skeleton"
+            onLoadingComplete={(image) => image.classList.remove("skeleton")}
+          />
         </SwiperSlide>
         {imgs.map((img, index) => (
           <SwiperSlide key={index}>
-            <img src={img} alt={"work thumbnail images"} />
+            <Image
+              src={img}
+              alt={"work thumbnail images"}
+              fill
+              className="skeleton"
+              onLoadingComplete={(image) => image.classList.remove("skeleton")}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
