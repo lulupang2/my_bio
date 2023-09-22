@@ -79,15 +79,7 @@ const Portfolio = () => {
       <div className={cn("wrapper")}>
         <div className={cn("header")}>
           <div className={cn("header-title")}>
-            {/* <h1>my work</h1> */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="save-button"
-              onClick={() => (isModalOpen ? closeModal() : openModal())}
-            >
-              Launch modal
-            </motion.button>
+            <h1>my work</h1>
           </div>
           <div className={cn("header-filter")}>
             <input

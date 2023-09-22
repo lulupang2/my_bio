@@ -3,6 +3,7 @@
 @import "swiper/css/pagination";
 
 .swiper {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -12,7 +13,6 @@
 .swiper-slide {
   text-align: center;
   display: flex;
-  color: red;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -37,8 +37,13 @@
 .swiper-pagination-bullet-active {
   background-color: $primary-color !important;
 }
-.thumbSwiper img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+.mainSwiper {
+  flex: 8;
+}
+.thumbSwiper {
+  flex: 2;
+  img {
+    width: 100%;
+    object-fit: fill;
+  }
 }

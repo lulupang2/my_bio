@@ -17,6 +17,7 @@ const Carousel = ({ imgs, thumb }: { thumb: string; imgs: string[] }) => {
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
+        className="mainSwiper"
       >
         <SwiperSlide>
           <img src={thumb} alt={"work images"} />
