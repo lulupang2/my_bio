@@ -85,7 +85,7 @@ const Portfolio = () => {
     setModaldata(data);
   };
   return (
-    <article className={cn("container")} ref={targetRef} id="portfolio">
+    <article className={cn("container")} ref={targetRef} id="work">
       <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
         {modalOpen && <Modal handleClose={closeModal} />}
       </AnimatePresence>

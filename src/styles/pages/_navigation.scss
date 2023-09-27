@@ -25,17 +25,14 @@
       transition: all 0.3s linear;
       position: relative;
       padding: 0.5rem 0;
-      a {
-        text-decoration: none;
-        color: var(--text);
-        font-size: 1.2rem;
-        font-weight: 700;
-        transition: all 0.3s linear;
-        text-transform: capitalize;
-        &:hover {
-          color: #ff2e63;
-        }
+      text-decoration: none;
+      transition: all 0.3s linear;
+      text-transform: capitalize;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      &:hover {
+        color: #ff2e63;
       }
+
       &[data-set="active"] {
         > a {
           color: $primary-color;
@@ -58,7 +55,6 @@
     //
     flex: 2;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     position: relative;
     &-lang {
@@ -69,17 +65,18 @@
       &-list {
         background-color: var(--text);
         position: absolute;
-        display: flex;
+        display: grid;
         flex-direction: column;
+        top: 100%;
+        width: 60%;
+        height: clamp(4rem, 5vh, 6rem);
+        padding-left: 1rem;
+        align-items: center;
       }
 
       &-option {
         color: var(--background);
-        text-overflow: ellipsis;
-        white-space: nowrap;
         cursor: pointer;
-        border: 1px solid red;
-        height: 50px;
       }
 
       ul,

@@ -12,6 +12,10 @@ type ModalProps = {
   data: WorkModalProps;
   setModalData: (data: WorkModalProps) => void;
 };
+type viewProps = {
+  section: string;
+  setSection: (section: string) => void;
+};
 export const useThemeStore = create(
   persist<ThemeProps>(
     (set) => ({
@@ -41,6 +45,11 @@ export const useModalStore = create<ModalProps>((set) => ({
   isModalOpen: false,
   toggleModal: (e) => set(() => ({ isModalOpen: e })),
   setModalData: (data) => set(() => ({ data })),
+}));
+
+export const useViewStore = create<viewProps>((set) => ({
+  section: "home",
+  setSection: (section) => set(() => ({ section })),
 }));
 
 export const useThemeState = () => useThemeStore((state) => state.theme);

@@ -1,5 +1,6 @@
 "use client";
 import { classes } from "@libs/classes";
+import { useViewStore } from "@store/index";
 import { Variants, motion } from "framer-motion";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
@@ -11,10 +12,12 @@ const NavigationBar = () => {
   //네비게이션
   const onMoveToElement = useCallback((id: string) => {
     if (typeof window !== "undefined") {
+      if (id === "home") return scrollTo({ behavior: "smooth", top: 0 });
       const element = document.getElementById(id);
       element?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, []);
+  const { section: nowSection } = useViewStore((state) => state);
   //테마
   const [isChecked, setIsChecked] = useState(false);
   const onClickThemeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -72,20 +75,22 @@ const NavigationBar = () => {
         <ul className={cn(`menu`)}>
           <li
             className={cn(`menu-item`)}
-            data-set={"active"}
+            data-set={nowSection === "home" && "active"}
             onClick={() => onMoveToElement("home")}
           >
             home
           </li>
           <li
             className={cn(`menu-item`)}
+            data-set={nowSection === "about" && "active"}
             onClick={() => onMoveToElement("about")}
           >
             about
           </li>
           <li
             className={cn(`menu-item`)}
-            onClick={() => onMoveToElement("portfolio")}
+            data-set={nowSection === "work" && "active"}
+            onClick={() => onMoveToElement("work")}
           >
             work
           </li>
@@ -134,7 +139,6 @@ const NavigationBar = () => {
               <DIV
                 variants={itemVariants}
                 onClick={() => onSelect("ko")}
-                onMouseEnter={() => console.log("ko")}
                 className={cn(`action-lang-option`)}
               >
                 한글 🇰🇷
@@ -142,7 +146,6 @@ const NavigationBar = () => {
               <DIV
                 variants={itemVariants}
                 onClick={() => onSelect("en")}
-                onMouseEnter={() => console.log("en")}
                 className={cn(`action-lang-option`)}
               >
                 ENGLISH 🇺🇸
