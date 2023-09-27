@@ -11,6 +11,7 @@ import {
 } from "@store/index";
 import {
   AnimatePresence,
+  Variants,
   motion,
   useScroll,
   useTransform,
@@ -19,10 +20,22 @@ import _ from "lodash";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
+const itemVariants: Variants = {
+  offscreen: {
+    y: 200,
+  },
+  onscreen: {
+    y: 10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1.8,
+    },
+  },
+};
+
 //TO-DO: 작업정보를 전역상태나 useState 하나만 써서 관리해야할듯
-//TO-DO: 섬네일 이미지 preload?
 //TO-DO: 애니메이숀 적용하기
-//TO-DO: stack 아이콘 추가하기
 const cn = (str: string) => classes(`portfolio-` + str);
 const Portfolio = () => {
   const [originData] = useState<WorkModalProps[]>(TEMP);
@@ -132,13 +145,20 @@ const Portfolio = () => {
               </React.Fragment>
             )}
           </div>
-          <motion.div style={{ y }} className={cn("item")}>
+          <motion.div
+            style={{ y }}
+            className={cn("item")}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true }}
+          >
             {filterData.map((item, index) => (
-              <div
+              <motion.div
                 className={cn("item-wrapper")}
                 key={index}
                 onMouseEnter={() => onHover(item)}
                 onClick={() => onHover(item)}
+                variants={itemVariants}
               >
                 <div className={cn("item-title")}>{item.title}</div>
                 <div className={cn("item-stack")}>
@@ -149,62 +169,62 @@ const Portfolio = () => {
                         <Image
                           src="/icons/React.svg"
                           alt="react logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                       {el === "reactnative" && (
                         <Image
                           src="/icons/ReactNative.svg"
                           alt="react native logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                       {el === "nextjs" && (
                         <Image
                           src="/icons/Next.js.svg"
                           alt="nextjs logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                       {el === "chakra" && (
                         <Image
                           src="/icons/Chakra.svg"
                           alt="chakra ui logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                       {el === "scss" && (
                         <Image
                           src="/icons/Sass.svg"
                           alt="sass logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                       {el === "javascript" && (
                         <Image
                           src="/icons/JavaScript.svg"
                           alt="javacript logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                       {el === "typescript" && (
                         <Image
                           src="/icons/TypeScript.svg"
                           alt="typescript logo icon"
-                          width={30}
-                          height={30}
+                          width={50}
+                          height={50}
                         />
                       )}
                     </div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
@@ -261,7 +281,7 @@ const TEMP: WorkModalProps[] = [
     전문가 매칭 플랫폼 전문가들의 여러 분야에서 매칭 가능하도록 개발된 플랫폼
 `,
     thumb: `${THUMB_URL}/thumb_w.webp`,
-    stack: ["react", "nextjs", "typescript", "chakra"],
+    stack: ["react", "nextjs", "typescript", "chak"],
     img: [
       `${IMG_URL}/w1.png`,
       `${IMG_URL}/w2.png`,

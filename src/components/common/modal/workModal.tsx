@@ -1,6 +1,7 @@
 import { classes } from "@libs/classes";
 import { useModalData } from "@store/index";
 import Carousel from "../carousel";
+import Image from "next/image";
 
 export type WorkModalProps = {
   id: number;
@@ -51,7 +52,68 @@ const WorkModal = ({ close }: { close: () => void }) => {
         </div>
         <div className={cn(`contents-stack`)}>
           <span className={cn(`contents-label`)}>FrameWork</span>
-          <span className={cn(`contents-text`)}>{stack}</span>
+          <span className={cn(`contents-text`)}>
+            {stack.map((el) => (
+              <>
+                {el === "react" && (
+                  <Image
+                    src="/icons/React.svg"
+                    alt="react logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+                {el === "reactnative" && (
+                  <Image
+                    src="/icons/ReactNative.svg"
+                    alt="react native logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+                {el === "nextjs" && (
+                  <Image
+                    src="/icons/Next.js.svg"
+                    alt="nextjs logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+                {el === "chakra" && (
+                  <Image
+                    src="/icons/Chakra.svg"
+                    alt="chakra ui logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+                {el === "scss" && (
+                  <Image
+                    src="/icons/Sass.svg"
+                    alt="sass logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+                {el === "javascript" && (
+                  <Image
+                    src="/icons/JavaScript.svg"
+                    alt="javacript logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+                {el === "typescript" && (
+                  <Image
+                    src="/icons/TypeScript.svg"
+                    alt="typescript logo icon"
+                    width={50}
+                    height={50}
+                  />
+                )}
+              </>
+            ))}
+          </span>
         </div>
       </div>
     </>
