@@ -121,20 +121,21 @@
     &-wrapper {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       min-height: 15vh;
       border-bottom: 1px solid var(--text);
     }
     &-title {
       @include text-title-thin();
+      align-self: center;
 
       flex: 7;
     }
-    &-box {
-      @include text-title-thin();
-      text-transform: uppercase;
-
+    &-stack {
+      display: flex;
+      align-self: flex-end;
+      justify-content: flex-end;
       flex: 3;
+      height: 100%;
     }
   }
 }

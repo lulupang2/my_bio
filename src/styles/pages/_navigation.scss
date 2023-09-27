@@ -1,10 +1,10 @@
 .nav {
+  z-index: 1;
   &-container {
     display: flex;
     justify-content: space-between;
   }
   &-logo {
-    border: 2px solid #cf13fa;
     //
     flex: 1;
     font-size: 2rem;
@@ -55,7 +55,6 @@
     }
   }
   &-action {
-    border: 2px solid #ff88aa;
     //
     flex: 2;
     display: flex;
@@ -63,44 +62,33 @@
     align-items: center;
     position: relative;
     &-lang {
+      flex: 1;
       color: var(--text);
+      display: flex;
 
-      ul {
+      &-list {
         background-color: var(--text);
         position: absolute;
         display: flex;
         flex-direction: column;
-        gap: 10px;
       }
 
-      li {
+      &-option {
         color: var(--background);
-        display: block;
         text-overflow: ellipsis;
         white-space: nowrap;
+        cursor: pointer;
+        border: 1px solid red;
+        height: 50px;
       }
 
       ul,
       li {
         list-style: none;
-        margin: 0;
-        padding: 10px;
-      }
-      button {
-        -webkit-appearance: button;
-        appearance: button;
-        background-color: var(--text);
-        color: var(--background);
-        border: 1px solid var(--text);
-        border-radius: 10px;
-        cursor: pointer;
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
       }
     }
     &-theme {
+      flex: 1;
       input[type="checkbox"] {
         position: absolute;
         opacity: 0;

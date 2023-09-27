@@ -3,7 +3,7 @@ import { classes } from "@libs/classes";
 import { Variants, motion } from "framer-motion";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const cn = (str: string) => classes(`nav-` + str);
 
@@ -13,39 +13,42 @@ const NavigationBar = () => {
   // const onThemeChangeHandler = () => {
   //   setTheme(!theme);
   // };
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const [isChecked, setIsChecked] = useState(false);
+  const onClickThemeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.target.checked
       ? document.documentElement.setAttribute("data-theme", "light")
       : document.documentElement.setAttribute("data-theme", "dark");
+    return setIsChecked(!isChecked);
   };
 
   //언어
-  const [isPending, startTransition] = useTransition();
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const onSelect = (event: any) => {
-    const nextLocale = event.target.value;
-    startTransition(() => {
-      router.replace(pathname, { locale: nextLocale });
-    });
+  const onSelect = (lang: string) => {
+    router.replace(pathname, { locale: lang });
+    console.log("nextLocale", lang);
   };
 
-  const { ul: UL, li: LI, div: DIV, button: BUTTON } = motion;
+  //애니메이션
+  const { div: DIV, span: SPAN } = motion;
   const [isOpen, setIsOpen] = useState(false);
   const itemVariants: Variants = {
     open: {
       opacity: 1,
-      y: 0,
+
       transition: { type: "spring", stiffness: 300, damping: 24 },
     },
-    closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+    closed: { opacity: 0, transition: { duration: 0.2 } },
   };
-  const ref = useRef<HTMLDivElement>(null);
+  const langSelectRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
+      if (
+        langSelectRef.current &&
+        !langSelectRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
@@ -55,7 +58,7 @@ const NavigationBar = () => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [ref]);
+  }, [langSelectRef]);
   return (
     <header>
       <nav className={cn(`container`)}>
@@ -83,23 +86,13 @@ const NavigationBar = () => {
             className={cn(`action-lang`)}
             initial={false}
             animate={isOpen ? "open" : "closed"}
-            ref={ref}
+            ref={langSelectRef}
           >
-            <BUTTON
-              whileTap={{ scale: 0.97 }}
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {locale.toString()} / {isPending.toString()}
-              <DIV
-                variants={{
-                  open: { rotate: 180 },
-                  closed: { rotate: 0 },
-                }}
-                transition={{ duration: 0.2 }}
-                style={{ originY: 0.55 }}
-              ></DIV>
-            </BUTTON>
-            <UL
+            <SPAN whileTap={{ scale: 0.97 }} onClick={() => setIsOpen(!isOpen)}>
+              {locale.toString() === "ko" ? "한글" : "English"} 🔻
+            </SPAN>
+            <DIV
+              className={cn(`action-lang-list`)}
               variants={{
                 open: {
                   clipPath: "inset(0% 0% 0% 0% round 10px)",
@@ -122,19 +115,33 @@ const NavigationBar = () => {
               }}
               style={{ pointerEvents: isOpen ? "auto" : "none" }}
             >
-              <LI variants={itemVariants}>ENGLISH🇺🇸</LI>
-              <LI
+              <DIV
                 variants={itemVariants}
-                value={"ko"}
-                onClick={(e) => onSelect(e)}
+                onClick={() => onSelect("ko")}
+                onMouseEnter={() => console.log("ko")}
+                className={cn(`action-lang-option`)}
               >
-                한글🇰🇷
-              </LI>
-            </UL>
+                한글 🇰🇷
+              </DIV>
+              <DIV
+                variants={itemVariants}
+                onClick={() => onSelect("en")}
+                onMouseEnter={() => console.log("en")}
+                className={cn(`action-lang-option`)}
+              >
+                ENGLISH 🇺🇸
+              </DIV>
+            </DIV>
           </DIV>
           <div className={cn(`action-theme`)}>
-            <input type="checkbox" name="sw" id="mode" onChange={onChange} />
-            <label htmlFor="mode">☀️🌙</label>
+            <input
+              type="checkbox"
+              name="sw"
+              id="mode"
+              onChange={(e) => onClickThemeHandler(e)}
+              checked={isChecked}
+            />
+            <label htmlFor="mode">{isChecked ? "☀️" : "🌙"}</label>
           </div>
         </div>
       </nav>

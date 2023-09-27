@@ -138,12 +138,69 @@ const Portfolio = () => {
                 className={cn("item-wrapper")}
                 key={index}
                 onMouseEnter={() => onHover(item)}
+                onClick={() => onHover(item)}
               >
                 <div className={cn("item-title")}>{item.title}</div>
-                <div className={cn("item-box")}>
+                <div className={cn("item-stack")}>
                   {item.stack.map((el, i) => (
-                    <div key={i} className={cn("item-library")}>
-                      {el}
+                    <div key={i} className={cn("item-box")}>
+                      {/* 함수로 빼는게 낫나? */}
+                      {el === "react" && (
+                        <Image
+                          src="/icons/React.svg"
+                          alt="react logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
+                      {el === "reactnative" && (
+                        <Image
+                          src="/icons/ReactNative.svg"
+                          alt="react native logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
+                      {el === "nextjs" && (
+                        <Image
+                          src="/icons/Next.js.svg"
+                          alt="nextjs logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
+                      {el === "chakra" && (
+                        <Image
+                          src="/icons/Chakra.svg"
+                          alt="chakra ui logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
+                      {el === "scss" && (
+                        <Image
+                          src="/icons/Sass.svg"
+                          alt="sass logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
+                      {el === "javascript" && (
+                        <Image
+                          src="/icons/JavaScript.svg"
+                          alt="javacript logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
+                      {el === "typescript" && (
+                        <Image
+                          src="/icons/TypeScript.svg"
+                          alt="typescript logo icon"
+                          width={30}
+                          height={30}
+                        />
+                      )}
                     </div>
                   ))}
                 </div>
@@ -204,7 +261,7 @@ const TEMP: WorkModalProps[] = [
     전문가 매칭 플랫폼 전문가들의 여러 분야에서 매칭 가능하도록 개발된 플랫폼
 `,
     thumb: `${THUMB_URL}/thumb_w.webp`,
-    stack: ["react", "nextjs", "typescript"],
+    stack: ["react", "nextjs", "typescript", "chakra"],
     img: [
       `${IMG_URL}/w1.png`,
       `${IMG_URL}/w2.png`,
