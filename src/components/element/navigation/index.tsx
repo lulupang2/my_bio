@@ -3,16 +3,19 @@ import { classes } from "@libs/classes";
 import { Variants, motion } from "framer-motion";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const cn = (str: string) => classes(`nav-` + str);
 
 const NavigationBar = () => {
+  //네비게이션
+  const onMoveToElement = useCallback((id: string) => {
+    if (typeof window !== "undefined") {
+      const element = document.getElementById(id);
+      element?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
   //테마
-  // const { theme, setTheme } = useThemeStore((state) => state);
-  // const onThemeChangeHandler = () => {
-  //   setTheme(!theme);
-  // };
   const [isChecked, setIsChecked] = useState(false);
   const onClickThemeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.target.checked
@@ -67,17 +70,30 @@ const NavigationBar = () => {
         </div>
 
         <ul className={cn(`menu`)}>
-          <li className={cn(`menu-item`)} data-set={"active"}>
-            <a href="/#home">home</a>
+          <li
+            className={cn(`menu-item`)}
+            data-set={"active"}
+            onClick={() => onMoveToElement("home")}
+          >
+            home
           </li>
-          <li className={cn(`menu-item`)}>
-            <a href="/#about">about</a>
+          <li
+            className={cn(`menu-item`)}
+            onClick={() => onMoveToElement("about")}
+          >
+            about
           </li>
-          <li className={cn(`menu-item`)}>
-            <a href="/#work">work</a>
+          <li
+            className={cn(`menu-item`)}
+            onClick={() => onMoveToElement("portfolio")}
+          >
+            work
           </li>
-          <li className={cn(`menu-item`)}>
-            <a href="/#contact">contact</a>
+          <li
+            className={cn(`menu-item`)}
+            onClick={() => onMoveToElement("contact")}
+          >
+            contact
           </li>
         </ul>
 

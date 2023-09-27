@@ -1,6 +1,8 @@
 header {
   padding: 2rem;
   max-height: 5dvh;
-  position: relative;
+  position: sticky;
   z-index: 2;
+  top: 0;
+  background-color: var(--background);
 }

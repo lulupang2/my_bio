@@ -24,7 +24,7 @@ const Home = () => {
   }
 
   return (
-    <article className={cn("container")}>
+    <article className={cn("container")} id="home">
       <div className={cn("images")}>
         <HeroImage />
       </div>

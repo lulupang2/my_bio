@@ -16,7 +16,7 @@ const About = () => {
   });
 
   return (
-    <article className={cn(`container`)}>
+    <article className={cn(`container`)} id="about">
       <div className={cn(`contents`)}>
         <div className={cn(`wrapper`)}>
           <h1>
