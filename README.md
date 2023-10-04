@@ -10,7 +10,8 @@
 - [x] 전체 레이아웃
 - [x] 색상,폰트 변수처리
 - [ ] header navigation
-  > 그.. 아이콘이나 자잘한거 버튼 처리 남음
+  > ~~그.. 아이콘이나 자잘한거 버튼 처리 남음~~
+  > intersectionobserver같은걸로 섹션 감지되면 해당 nav active처리 (전역처리 해야하나?)
 - [x] home section
 - [x] about section
 - [ ] portfolio section
@@ -20,6 +21,11 @@
 - [ ] 다중언어 처리
   > 안할거같은데.. 셋업한김에 작동하는지만 구현
 - [x] 배포
+
+- [ ] 미디어쿼리 작업
+  > portfolio section 스타일 작업하면서 같이 하기
+- [ ] 코드 리팩토링
+  > 작업물 부분 특히 필요!
 
 ```
 ├── messages        -- [다중언어(next intl)파일 처리]  -> contants폴더로 상수처리하는것도 괜찮을듯
