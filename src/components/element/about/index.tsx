@@ -3,13 +3,11 @@ import { AboutImage } from "@generated/images";
 import clsx from "clsx";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import styles from "./index.module.scss";
 
-const cx = clsx.bind(styles);
 const About = () => {
   const observerRef = useRef(null);
   const isInView = useInView(observerRef);
-  const cn = (str: string) => cx(`about-` + str);
+  const cn = (str: string) => clsx(`about-` + str);
   const imageStyle = clsx({
     [cn("image")]: true,
     [cn("image-hidden")]: !isInView,
@@ -38,13 +36,13 @@ const About = () => {
           recusandae. Fuga, nam. Doloribus a autem quas odio quisquam nulla!
           Mollitia, nisi eligendi.
         </p>
-        <p>
+        <p ref={observerRef}>
           3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
           maxime saepe repellat nemo nobis odit quibusdam repellendus
           recusandae. Fuga, nam. Doloribus a autem quas odio quisquam nulla!
           Mollitia, nisi eligendi.
         </p>
-        <p ref={observerRef}>
+        <p>
           4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
           maxime saepe repellat nemo nobis odit quibusdam repellendus
           recusandae. Fuga, nam. Doloribus a autem quas odio quisquam nulla!
