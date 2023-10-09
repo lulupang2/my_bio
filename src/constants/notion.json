@@ -1,0 +1,1429 @@
+{
+  "94fb31ed-6ddf-44f7-8221-9d9cab86948d": {
+    "value": {
+      "id": "94fb31ed-6ddf-44f7-8221-9d9cab86948d",
+      "version": 230,
+      "type": "page",
+      "properties": { "title": [["안녕하세요, 지성인 입니다! 🐒"]] },
+      "content": [
+        "56dba28d-33b5-48b3-9faf-90535b9c87a1",
+        "cf9a66a5-d7da-4e41-b762-41cdbd125138",
+        "d9e4cafb-41e8-4ab6-ab17-0c1cb990150a"
+      ],
+      "format": {
+        "page_icon": "🐱",
+        "page_cover": "/images/page-cover/met_goya_1789.jpg",
+        "page_full_width": true,
+        "page_small_text": true,
+        "copied_from_pointer": {
+          "id": "965dc193-1789-482d-a4e6-ab9b010d3989",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        },
+        "page_cover_position": 0.2226
+      },
+      "permissions": [
+        {
+          "role": "editor",
+          "type": "user_permission",
+          "user_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c"
+        },
+        { "role": "reader", "type": "space_permission" },
+        {
+          "role": "reader",
+          "type": "public_permission",
+          "added_timestamp": 1696424815729,
+          "allow_duplicate": false
+        }
+      ],
+      "created_time": 1687293329961,
+      "last_edited_time": 1696424817158,
+      "parent_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946",
+      "parent_table": "space",
+      "alive": true,
+      "copied_from": "965dc193-1789-482d-a4e6-ab9b010d3989",
+      "file_ids": ["c4057a4b-50a1-4d84-8080-f682c3e903ba"],
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "56dba28d-33b5-48b3-9faf-90535b9c87a1": {
+    "value": {
+      "id": "56dba28d-33b5-48b3-9faf-90535b9c87a1",
+      "version": 2,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "ecd6d97d-1de6-48b1-8286-587a27e79af9",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329961,
+      "last_edited_time": 1687293329988,
+      "parent_id": "94fb31ed-6ddf-44f7-8221-9d9cab86948d",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "ecd6d97d-1de6-48b1-8286-587a27e79af9",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "cf9a66a5-d7da-4e41-b762-41cdbd125138": {
+    "value": {
+      "id": "cf9a66a5-d7da-4e41-b762-41cdbd125138",
+      "version": 4,
+      "type": "column_list",
+      "content": [
+        "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+        "124a6580-78e7-4d76-8281-718745e01207"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "1003a753-1c08-41c6-91f0-002d53dcc709",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329961,
+      "last_edited_time": 1687293691257,
+      "parent_id": "94fb31ed-6ddf-44f7-8221-9d9cab86948d",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "1003a753-1c08-41c6-91f0-002d53dcc709",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "3d148e91-5d3e-439a-b219-fa5e34c9afa7": {
+    "value": {
+      "id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "version": 237,
+      "type": "column",
+      "content": [
+        "30e7a3fe-7537-4559-9150-2b99ec14deb4",
+        "a738f40c-01ca-4cb8-95a3-89e015549401",
+        "c893caf4-bab8-4980-a9eb-e0d2ce18cdc6",
+        "f42d4087-2790-461b-ab91-d2cf9b427498",
+        "69176e27-d54e-4bb9-8268-cb342701905d",
+        "bc5cb9c9-8a0a-4c6a-86cd-70271353bf45",
+        "41303f1f-35aa-4edb-8b40-b0c87171d2e8",
+        "c5579cba-b636-4bcf-b626-7c781f020068",
+        "1b41264b-f4c0-42e2-b964-baf1136e2cae",
+        "d0b6fd0f-c0c0-4058-a9f2-f3b7bda4e88c",
+        "83b5ef8e-782d-4bd5-a78b-a117ef0f02d8",
+        "f34e08a1-29af-4667-a26b-972c93398292",
+        "62c05be5-062b-4854-a3fd-3682a4d70b8c",
+        "97f9720c-136c-4b99-b5d9-301c61144e3a",
+        "23da0ea5-d396-4ced-a392-761bf905e28c",
+        "70cf3069-0a23-402b-afd2-27901f1f286c"
+      ],
+      "format": {
+        "column_ratio": 0.375,
+        "copied_from_pointer": {
+          "id": "8ba7c4cb-7e3c-4c86-80bb-0926661291f9",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329962,
+      "last_edited_time": 1696422697146,
+      "parent_id": "cf9a66a5-d7da-4e41-b762-41cdbd125138",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "8ba7c4cb-7e3c-4c86-80bb-0926661291f9",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "124a6580-78e7-4d76-8281-718745e01207": {
+    "value": {
+      "id": "124a6580-78e7-4d76-8281-718745e01207",
+      "version": 48,
+      "type": "column",
+      "content": [
+        "3b15d4d4-3c53-4613-a6f4-43aedf25df2a",
+        "9945d771-d4dd-460d-8567-ff1d49b28f32",
+        "3d790ebc-4b06-4179-bde2-cb8efefeafe6",
+        "977812c9-f33e-4a2a-9c51-63e275601471",
+        "7946a711-15e1-42e6-99e9-327eb7024fa5",
+        "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+        "0bb8b135-df33-4976-af5a-60569f859a22"
+      ],
+      "format": {
+        "column_ratio": 0.625,
+        "copied_from_pointer": {
+          "id": "c82ed9fa-df6a-443e-9165-d9948ccde3ae",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329962,
+      "last_edited_time": 1693500309697,
+      "parent_id": "cf9a66a5-d7da-4e41-b762-41cdbd125138",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "c82ed9fa-df6a-443e-9165-d9948ccde3ae",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "30e7a3fe-7537-4559-9150-2b99ec14deb4": {
+    "value": {
+      "id": "30e7a3fe-7537-4559-9150-2b99ec14deb4",
+      "version": 61,
+      "type": "sub_header",
+      "properties": { "title": [["Profile"]] },
+      "format": {
+        "block_color": "pink",
+        "copied_from_pointer": {
+          "id": "5e338121-948a-4a57-a0a5-66a1c7ecf108",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329963,
+      "last_edited_time": 1687296776285,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "5e338121-948a-4a57-a0a5-66a1c7ecf108",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "3b15d4d4-3c53-4613-a6f4-43aedf25df2a": {
+    "value": {
+      "id": "3b15d4d4-3c53-4613-a6f4-43aedf25df2a",
+      "version": 88,
+      "type": "sub_header",
+      "properties": { "title": [[" Develop Stack"]] },
+      "format": {
+        "block_color": "pink",
+        "copied_from_pointer": {
+          "id": "f7b0d3c6-0468-4006-9594-e9862d873d47",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329967,
+      "last_edited_time": 1687293843611,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "f7b0d3c6-0468-4006-9594-e9862d873d47",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "a738f40c-01ca-4cb8-95a3-89e015549401": {
+    "value": {
+      "id": "a738f40c-01ca-4cb8-95a3-89e015549401",
+      "version": 7,
+      "type": "divider",
+      "format": {
+        "copied_from_pointer": {
+          "id": "8e7dd3b1-d3b6-419d-aad7-3a6d6b1d61ce",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329963,
+      "last_edited_time": 1687296766837,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "8e7dd3b1-d3b6-419d-aad7-3a6d6b1d61ce",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "9945d771-d4dd-460d-8567-ff1d49b28f32": {
+    "value": {
+      "id": "9945d771-d4dd-460d-8567-ff1d49b28f32",
+      "version": 2,
+      "type": "divider",
+      "format": {
+        "copied_from_pointer": {
+          "id": "0c520d7e-11f9-4ae1-80c8-f493a423c675",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329967,
+      "last_edited_time": 1687293329988,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "0c520d7e-11f9-4ae1-80c8-f493a423c675",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "c893caf4-bab8-4980-a9eb-e0d2ce18cdc6": {
+    "value": {
+      "id": "c893caf4-bab8-4980-a9eb-e0d2ce18cdc6",
+      "version": 7,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "71ee60d0-2789-4d83-b648-ab2f87bd49a7",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329963,
+      "last_edited_time": 1687296766837,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "71ee60d0-2789-4d83-b648-ab2f87bd49a7",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "3d790ebc-4b06-4179-bde2-cb8efefeafe6": {
+    "value": {
+      "id": "3d790ebc-4b06-4179-bde2-cb8efefeafe6",
+      "version": 119,
+      "type": "quote",
+      "properties": {
+        "title": [
+          [
+            "주로 React Hook 기반으로 작업했습니다. 재사용되는 코드와 로직을 분리하여 커스텀 훅과 컴포넌트를 활용할 수 있습니다. \nNext.js에서 SEO 최적화를 위해 Next SEO 라이브러리를 사용하여 meta, og, title 태그를 관리하였으며, 서버 사이드 작업도 진행했습니다. \n비동기 통신 작업은 axios와 react-query로 진행하였습니다. \n전역 상태 관리는 Redux와 Recoil, Zustand를 사용하여 작업했습니다. \nReact 외 다른 라이브러리로는 Svelte로 간단한 토이 프로젝트를 진행한 적이 있습니다. \n스타일 작업은 CSS, SASS, Styled Component, Chakra-UI로 작업이 가능하며, \n간단한 애니메이션은 Framer-motion으로 작업이 가능합니다. \n모바일 애플리케이션은 React Native로 크로스 플랫폼 개발을 진행한 경험이 있습니다."
+          ]
+        ]
+      },
+      "content": [
+        "c330c679-ee6a-4917-8743-6e9ca680cfad",
+        "d6fee2ee-97ed-4861-8162-fc5d680469f5"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "c6dd2d12-a38f-4ab6-a395-a0660f20e8d1",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329967,
+      "last_edited_time": 1687294939824,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "c6dd2d12-a38f-4ab6-a395-a0660f20e8d1",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "c330c679-ee6a-4917-8743-6e9ca680cfad": {
+    "value": {
+      "id": "c330c679-ee6a-4917-8743-6e9ca680cfad",
+      "version": 32,
+      "type": "text",
+      "properties": {
+        "title": [
+          [
+            "\nSpring Boot와 Express, Nest.js로 간단한 웹 서버를 구축할 수 있습니다. \n사용해본 ORM은 Express(KOA)에서 Prisma를 사용해보았고, \nSpring Boot에서 JPA를 간단하게 사용해봤습니다. \nRDBMS는 MySQL(MariaDB), Oracle, Postgres를 사용해보았으며, \n회원가입 인증 서비스를 구축할 때 간단하게 Redis를 사용하여 캐시 데이터를 관리했습니다."
+          ]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "fae783b0-9d5f-48eb-a675-f3162077bac9",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687293978019,
+      "last_edited_time": 1687294961715,
+      "parent_id": "3d790ebc-4b06-4179-bde2-cb8efefeafe6",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "fae783b0-9d5f-48eb-a675-f3162077bac9",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "d6fee2ee-97ed-4861-8162-fc5d680469f5": {
+    "value": {
+      "id": "d6fee2ee-97ed-4861-8162-fc5d680469f5",
+      "version": 533,
+      "type": "text",
+      "properties": {
+        "title": [
+          [
+            "\n리눅스 fedora계열은 CentOS(Rocky)와 RHLE를 사용해봤고 debian Ubuntu를 사용해봤습니다.  둘다 간단한 서버 구축이나 모니터 시스템 정도로 사용했습니다.\n프론트엔드 작업물을 AWS EC2로 Nginx로 빌드 배포가 가능합니다. \nCDN은 AWS S3 + CloudFront, Netlify, Vercel을 사용해봤습니다. \n협업 툴은 Jira, Confluence, Notion, Google Docs, Slack, Discord를 사용해봤습니다."
+          ]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "e3936ac6-062f-4391-a180-b975db286c55",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687293978019,
+      "last_edited_time": 1696422587918,
+      "parent_id": "3d790ebc-4b06-4179-bde2-cb8efefeafe6",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "e3936ac6-062f-4391-a180-b975db286c55",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "f42d4087-2790-461b-ab91-d2cf9b427498": {
+    "value": {
+      "id": "f42d4087-2790-461b-ab91-d2cf9b427498",
+      "version": 131,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "d6af01c5-915d-47e6-9d65-c15fee590f03",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329963,
+      "last_edited_time": 1687296789613,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "d6af01c5-915d-47e6-9d65-c15fee590f03",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "977812c9-f33e-4a2a-9c51-63e275601471": {
+    "value": {
+      "id": "977812c9-f33e-4a2a-9c51-63e275601471",
+      "version": 3,
+      "type": "sub_header",
+      "properties": { "title": [[" Work Experience"]] },
+      "format": {
+        "block_color": "pink",
+        "copied_from_pointer": {
+          "id": "3b15d4d4-3c53-4613-a6f4-43aedf25df2a",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687293822042,
+      "last_edited_time": 1687293822044,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "3b15d4d4-3c53-4613-a6f4-43aedf25df2a",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "69176e27-d54e-4bb9-8268-cb342701905d": {
+    "value": {
+      "id": "69176e27-d54e-4bb9-8268-cb342701905d",
+      "version": 5,
+      "type": "sub_header",
+      "properties": { "title": [["About Me"]] },
+      "format": {
+        "block_color": "pink",
+        "copied_from_pointer": {
+          "id": "4f32f67e-e3b5-4490-acbf-f22f55dc24e6",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329964,
+      "last_edited_time": 1687296795652,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "4f32f67e-e3b5-4490-acbf-f22f55dc24e6",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "7946a711-15e1-42e6-99e9-327eb7024fa5": {
+    "value": {
+      "id": "7946a711-15e1-42e6-99e9-327eb7024fa5",
+      "version": 3,
+      "type": "divider",
+      "format": {
+        "copied_from_pointer": {
+          "id": "9945d771-d4dd-460d-8567-ff1d49b28f32",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687293822042,
+      "last_edited_time": 1687293822044,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "9945d771-d4dd-460d-8567-ff1d49b28f32",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "bc5cb9c9-8a0a-4c6a-86cd-70271353bf45": {
+    "value": {
+      "id": "bc5cb9c9-8a0a-4c6a-86cd-70271353bf45",
+      "version": 4814,
+      "type": "callout",
+      "properties": {
+        "title": [
+          [
+            "안녕하세요! \n저는 웹 개발자 지성인 입니다.\nReact 위주의 프론트엔드 작업을 주로 했습니다.\n\n"
+          ],
+          [
+            " 새로운 기술과 트렌드를 습득하기 위해 노력하고 있습니다!  \n",
+            [["b"]]
+          ],
+          [
+            "사용하는 라이브러리 혹은 프레임워크의 최신버전이 릴리즈 되면 어떤점이 개선되고 바뀌었는지 공식홈페이지 혹은 요약된 포스팅 게시물이라도 읽으려고 노력합니다.\n\n"
+          ],
+          [
+            " 좋은 코드 품질을 유지하기 위해 많은 고민과 노력을 기울이고 있습니다!\n",
+            [["b"]]
+          ],
+          [
+            "혼자 개발 시작시 디자인패턴은 어떻게 할지 폴더 구조를 어떻게 할까, 코드 스플릿은 어느정도로 해야할까 하는 고민이 가장 시간을 많이 투자하는 부분입니다. 아직 주니어 개발자이기 때문에 많은 패턴 및 코드 컨벤션을 경험 해보지 못해서 구글링하면서 다른 개발자들의 패턴은 어떻게 사용하는지 비교하며 괜찮았던 부분을 흡수하고 배우려고 노력하고있습니다."
+          ]
+        ]
+      },
+      "format": {
+        "page_icon": "👨🏼‍💼",
+        "copied_from_pointer": {
+          "id": "c124fee4-1388-4bd2-87bd-b745f9db0c31",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329964,
+      "last_edited_time": 1696422991701,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "c124fee4-1388-4bd2-87bd-b745f9db0c31",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1": {
+    "value": {
+      "id": "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+      "version": 30,
+      "type": "quote",
+      "content": [
+        "d6ef40af-a963-4549-9973-b1c1ff8862b6",
+        "b878663e-e995-4fbd-a59c-a75775bda731",
+        "3cd6aaeb-91b5-4e7c-8d84-8557d86f7e5a",
+        "4049bb88-038a-4897-94c0-e3123b108246",
+        "46a0295a-67c6-4096-8ed2-8ed2508d2df0"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "3d790ebc-4b06-4179-bde2-cb8efefeafe6",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687293822042,
+      "last_edited_time": 1688512193533,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "3d790ebc-4b06-4179-bde2-cb8efefeafe6",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "d6ef40af-a963-4549-9973-b1c1ff8862b6": {
+    "value": {
+      "id": "d6ef40af-a963-4549-9973-b1c1ff8862b6",
+      "version": 62,
+      "type": "numbered_list",
+      "properties": {
+        "title": [["이더리움 기반 전문 쇼핑몰 플랫폼 (2022.03 ~ 2022.04)"]]
+      },
+      "content": [
+        "c5727cea-6fbb-4f03-b8e2-ced4fab96bf9",
+        "cd50df1a-1bf2-4262-be9c-8f154eb1326a"
+      ],
+      "created_time": 1687294173825,
+      "last_edited_time": 1687295186792,
+      "parent_id": "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "c5727cea-6fbb-4f03-b8e2-ced4fab96bf9": {
+    "value": {
+      "id": "c5727cea-6fbb-4f03-b8e2-ced4fab96bf9",
+      "version": 308,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "React를 이용하여 관리 페이지 프론트엔드 개발 작업을 수행했습니다. REST API 기반으로 회원 관리 및 토큰 정보 관리 주문 관리 기능 등 구현"
+          ]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "b1b2b9a1-9305-4c16-8fe4-4bd4f181700d",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1688512090736,
+      "parent_id": "d6ef40af-a963-4549-9973-b1c1ff8862b6",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "b1b2b9a1-9305-4c16-8fe4-4bd4f181700d",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "cd50df1a-1bf2-4262-be9c-8f154eb1326a": {
+    "value": {
+      "id": "cd50df1a-1bf2-4262-be9c-8f154eb1326a",
+      "version": 266,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "프론트엔드 개발자1명과 백엔드개발자 1명이 참여했고 프론트엔드 작업을 진행했습니다."
+          ]
+        ]
+      },
+      "created_time": 1687294228287,
+      "last_edited_time": 1693588623526,
+      "parent_id": "d6ef40af-a963-4549-9973-b1c1ff8862b6",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "b878663e-e995-4fbd-a59c-a75775bda731": {
+    "value": {
+      "id": "b878663e-e995-4fbd-a59c-a75775bda731",
+      "version": 23,
+      "type": "numbered_list",
+      "properties": {
+        "title": [["블록체인 기반 쇼핑몰 플랫폼 (2022.04 ~ 2022.05)"]]
+      },
+      "content": [
+        "c956ff74-6cc5-4a98-be10-aa352af42c9d",
+        "daa4b2c6-2042-4938-a906-faf61d3a4cf5"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "6e230803-2371-456d-adc0-ec6bfde7abd7",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1688512899163,
+      "parent_id": "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "6e230803-2371-456d-adc0-ec6bfde7abd7",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "c956ff74-6cc5-4a98-be10-aa352af42c9d": {
+    "value": {
+      "id": "c956ff74-6cc5-4a98-be10-aa352af42c9d",
+      "version": 541,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "React Native 기반으로 Android와 IOS 모바일 앱을 개발했습니다. 기존 출시된 모바일 어플을 디자인 리뉴얼 하는 작업이었으나 소스코드 유실로 typescript로 새로 진행"
+          ]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "3cd5792b-891e-4b25-92a3-c4d9679bc33c",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1688512193533,
+      "parent_id": "b878663e-e995-4fbd-a59c-a75775bda731",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "3cd5792b-891e-4b25-92a3-c4d9679bc33c",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "daa4b2c6-2042-4938-a906-faf61d3a4cf5": {
+    "value": {
+      "id": "daa4b2c6-2042-4938-a906-faf61d3a4cf5",
+      "version": 139,
+      "type": "bulleted_list",
+      "properties": { "title": [["프론트엔드 1인 작업 진행"]] },
+      "created_time": 1687294233990,
+      "last_edited_time": 1693588632512,
+      "parent_id": "b878663e-e995-4fbd-a59c-a75775bda731",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "3cd6aaeb-91b5-4e7c-8d84-8557d86f7e5a": {
+    "value": {
+      "id": "3cd6aaeb-91b5-4e7c-8d84-8557d86f7e5a",
+      "version": 24,
+      "type": "numbered_list",
+      "properties": {
+        "title": [["와이파이 단말기 보상 어플리케이션 (2022.06 ~ 2022.09)"]]
+      },
+      "content": [
+        "53a70aaf-d5cc-47c1-8a18-372f2bb9dd0e",
+        "4a4b4a91-76ff-4fa4-b5ef-405a3ad31243"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "f70eb82f-6281-474a-bc39-6640ff83924d",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1687295413812,
+      "parent_id": "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "f70eb82f-6281-474a-bc39-6640ff83924d",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "53a70aaf-d5cc-47c1-8a18-372f2bb9dd0e": {
+    "value": {
+      "id": "53a70aaf-d5cc-47c1-8a18-372f2bb9dd0e",
+      "version": 14,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          ["React Native를 이용하여 Android와 IOS 모바일 앱을 개발했습니다. "]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "b4046c2b-5d4c-41d9-9889-a71df454ff2a",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1688513559309,
+      "parent_id": "3cd6aaeb-91b5-4e7c-8d84-8557d86f7e5a",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "b4046c2b-5d4c-41d9-9889-a71df454ff2a",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "4a4b4a91-76ff-4fa4-b5ef-405a3ad31243": {
+    "value": {
+      "id": "4a4b4a91-76ff-4fa4-b5ef-405a3ad31243",
+      "version": 89,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "프론트엔드 개발자2명과 백엔드개발자 1명이 참여했고 CMS페이지 제외 모바일 프론트엔드 작업을 진행했습니다."
+          ]
+        ]
+      },
+      "created_time": 1687294241429,
+      "last_edited_time": 1693588655598,
+      "parent_id": "3cd6aaeb-91b5-4e7c-8d84-8557d86f7e5a",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "4049bb88-038a-4897-94c0-e3123b108246": {
+    "value": {
+      "id": "4049bb88-038a-4897-94c0-e3123b108246",
+      "version": 28,
+      "type": "numbered_list",
+      "properties": { "title": [["전문가 매칭 플랫폼 (2022.09 ~ 2022.12)"]] },
+      "content": [
+        "9742c2ad-ae5b-4842-9ac7-2569cf52aa7a",
+        "8c50e488-1c39-4c3e-a287-b33c8cc7e14e",
+        "004baa58-1774-410a-8eb7-4388644fae43"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "220d5af0-7004-4fd7-bace-657f48545f6e",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1688513567601,
+      "parent_id": "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "220d5af0-7004-4fd7-bace-657f48545f6e",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "9742c2ad-ae5b-4842-9ac7-2569cf52aa7a": {
+    "value": {
+      "id": "9742c2ad-ae5b-4842-9ac7-2569cf52aa7a",
+      "version": 7,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "Nextjs 기반 웹, 모바일 적응형 페이지 프론트 개발 작업을 수행했습니다. "
+          ]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "421f8c1a-f361-4cde-a0d3-c9583cba7730",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1688513564516,
+      "parent_id": "4049bb88-038a-4897-94c0-e3123b108246",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "421f8c1a-f361-4cde-a0d3-c9583cba7730",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "8c50e488-1c39-4c3e-a287-b33c8cc7e14e": {
+    "value": {
+      "id": "8c50e488-1c39-4c3e-a287-b33c8cc7e14e",
+      "version": 488,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "PG 서비스(아임포트) 연동, 결제페이지, 서비스 리스트 페이지, 서비스 상세페이지, SEO 최적화 작업 진행"
+          ]
+        ]
+      },
+      "created_time": 1688513567599,
+      "last_edited_time": 1688513682830,
+      "parent_id": "4049bb88-038a-4897-94c0-e3123b108246",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "004baa58-1774-410a-8eb7-4388644fae43": {
+    "value": {
+      "id": "004baa58-1774-410a-8eb7-4388644fae43",
+      "version": 125,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "프론트엔드 개발자2명과 백엔드개발자 1명이 참여했고 모바일,PC버전 웹 프론트엔드 작업을 진행했습니다."
+          ]
+        ]
+      },
+      "created_time": 1687294244392,
+      "last_edited_time": 1693588688563,
+      "parent_id": "4049bb88-038a-4897-94c0-e3123b108246",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "46a0295a-67c6-4096-8ed2-8ed2508d2df0": {
+    "value": {
+      "id": "46a0295a-67c6-4096-8ed2-8ed2508d2df0",
+      "version": 14,
+      "type": "numbered_list",
+      "properties": {
+        "title": [["NFT 기반 콘서트 예약 플랫폼 (2022.12 ~ 2022.12)"]]
+      },
+      "content": [
+        "494b2a81-2ad5-4877-bfa5-bb94ad426361",
+        "7937ae2b-e282-4624-b691-3ccb8a45055f",
+        "33f4aca2-1d23-42da-85be-3b83050f431c"
+      ],
+      "format": {
+        "copied_from_pointer": {
+          "id": "f29a3e0a-6583-4555-bcb1-4e40f9c2f003",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1693588722771,
+      "parent_id": "ac165f05-0f53-4e6a-aab8-7f5e256f5fb1",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "f29a3e0a-6583-4555-bcb1-4e40f9c2f003",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "494b2a81-2ad5-4877-bfa5-bb94ad426361": {
+    "value": {
+      "id": "494b2a81-2ad5-4877-bfa5-bb94ad426361",
+      "version": 102,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [["React를 이용하여 웹 프론트 개발 작업을 수행했습니다."]]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "305cf3d9-7c05-4dc6-8285-e0eed729c4df",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687294220576,
+      "last_edited_time": 1693588722414,
+      "parent_id": "46a0295a-67c6-4096-8ed2-8ed2508d2df0",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "305cf3d9-7c05-4dc6-8285-e0eed729c4df",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "7937ae2b-e282-4624-b691-3ccb8a45055f": {
+    "value": {
+      "id": "7937ae2b-e282-4624-b691-3ccb8a45055f",
+      "version": 436,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "검색서비스, 로그인 페이지, 엑세스 토큰 관리,티켓 페이지, 설정 및 내 정보 페이지를 담당했습니다."
+          ]
+        ]
+      },
+      "created_time": 1693588722768,
+      "last_edited_time": 1693588766356,
+      "parent_id": "46a0295a-67c6-4096-8ed2-8ed2508d2df0",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "33f4aca2-1d23-42da-85be-3b83050f431c": {
+    "value": {
+      "id": "33f4aca2-1d23-42da-85be-3b83050f431c",
+      "version": 5,
+      "type": "bulleted_list",
+      "properties": {
+        "title": [
+          [
+            "이 프로젝트에서는 Front-end Developer 3명이 참여하여 프로젝트를 완료했습니다."
+          ]
+        ]
+      },
+      "created_time": 1687294246835,
+      "last_edited_time": 1687294246847,
+      "parent_id": "46a0295a-67c6-4096-8ed2-8ed2508d2df0",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "41303f1f-35aa-4edb-8b40-b0c87171d2e8": {
+    "value": {
+      "id": "41303f1f-35aa-4edb-8b40-b0c87171d2e8",
+      "version": 18,
+      "type": "text",
+      "created_time": 1687293541030,
+      "last_edited_time": 1687296766837,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "0bb8b135-df33-4976-af5a-60569f859a22": {
+    "value": {
+      "id": "0bb8b135-df33-4976-af5a-60569f859a22",
+      "version": 3,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "f1bd282a-c2f0-4493-bb30-b99f3d70553b",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687293822042,
+      "last_edited_time": 1687293822044,
+      "parent_id": "124a6580-78e7-4d76-8281-718745e01207",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "f1bd282a-c2f0-4493-bb30-b99f3d70553b",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "c5579cba-b636-4bcf-b626-7c781f020068": {
+    "value": {
+      "id": "c5579cba-b636-4bcf-b626-7c781f020068",
+      "version": 13,
+      "type": "sub_header",
+      "properties": { "title": [["Contact", [["h", "pink"]]]] },
+      "format": {
+        "copied_from_pointer": {
+          "id": "da7ac418-7a48-4bbb-b76b-afb9c6cb7d65",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329964,
+      "last_edited_time": 1687296780788,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "da7ac418-7a48-4bbb-b76b-afb9c6cb7d65",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "1b41264b-f4c0-42e2-b964-baf1136e2cae": {
+    "value": {
+      "id": "1b41264b-f4c0-42e2-b964-baf1136e2cae",
+      "version": 3,
+      "type": "divider",
+      "format": {
+        "copied_from_pointer": {
+          "id": "a738f40c-01ca-4cb8-95a3-89e015549401",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771521,
+      "last_edited_time": 1687296771622,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "a738f40c-01ca-4cb8-95a3-89e015549401",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "d0b6fd0f-c0c0-4058-a9f2-f3b7bda4e88c": {
+    "value": {
+      "id": "d0b6fd0f-c0c0-4058-a9f2-f3b7bda4e88c",
+      "version": 3,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "c893caf4-bab8-4980-a9eb-e0d2ce18cdc6",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771533,
+      "last_edited_time": 1687296771622,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "c893caf4-bab8-4980-a9eb-e0d2ce18cdc6",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "83b5ef8e-782d-4bd5-a78b-a117ef0f02d8": {
+    "value": {
+      "id": "83b5ef8e-782d-4bd5-a78b-a117ef0f02d8",
+      "version": 238,
+      "type": "text",
+      "properties": {
+        "title": [
+          ["Portfolio:  "],
+          ["https://bio.jisung.pro", [["a", "https://bio.jisung.pro"]]],
+          [" (작업중입니다.. 😅)"]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "f42d4087-2790-461b-ab91-d2cf9b427498",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771545,
+      "last_edited_time": 1696423047088,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "f42d4087-2790-461b-ab91-d2cf9b427498",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "f34e08a1-29af-4667-a26b-972c93398292": {
+    "value": {
+      "id": "f34e08a1-29af-4667-a26b-972c93398292",
+      "version": 5,
+      "type": "text",
+      "properties": {
+        "title": [
+          ["Email: ", [["b"]]],
+          [" "],
+          ["lulupang@mail.com", [["a", "mailto:lulupang@mail.com"]]]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "f42d4087-2790-461b-ab91-d2cf9b427498",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771545,
+      "last_edited_time": 1696422609204,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "f42d4087-2790-461b-ab91-d2cf9b427498",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "62c05be5-062b-4854-a3fd-3682a4d70b8c": {
+    "value": {
+      "id": "62c05be5-062b-4854-a3fd-3682a4d70b8c",
+      "version": 3,
+      "type": "text",
+      "properties": {
+        "title": [
+          ["Github"],
+          [": ", [["b"]]],
+          [" "],
+          ["github.com/lulupang2", [["a", "https://github.com/lulupang2"]]]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "2efe6642-18e8-4edc-a901-15810738e027",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771556,
+      "last_edited_time": 1687296771622,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "2efe6642-18e8-4edc-a901-15810738e027",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "97f9720c-136c-4b99-b5d9-301c61144e3a": {
+    "value": {
+      "id": "97f9720c-136c-4b99-b5d9-301c61144e3a",
+      "version": 3,
+      "type": "text",
+      "properties": {
+        "title": [
+          ["Gitlab"],
+          [": ", [["b"]]],
+          ["  "],
+          ["gitlab.com/lulupang", [["a", "https://gitlab.com/lulupang"]]]
+        ]
+      },
+      "format": {
+        "copied_from_pointer": {
+          "id": "547acbda-9424-43ef-837e-d793bc6b1f1e",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771569,
+      "last_edited_time": 1687296771622,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "547acbda-9424-43ef-837e-d793bc6b1f1e",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "23da0ea5-d396-4ced-a392-761bf905e28c": {
+    "value": {
+      "id": "23da0ea5-d396-4ced-a392-761bf905e28c",
+      "version": 32,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "41303f1f-35aa-4edb-8b40-b0c87171d2e8",
+          "table": "block",
+          "spaceId": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+        }
+      },
+      "created_time": 1687296771581,
+      "last_edited_time": 1696422607595,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "41303f1f-35aa-4edb-8b40-b0c87171d2e8",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "70cf3069-0a23-402b-afd2-27901f1f286c": {
+    "value": {
+      "id": "70cf3069-0a23-402b-afd2-27901f1f286c",
+      "version": 9,
+      "type": "text",
+      "created_time": 1687294874774,
+      "last_edited_time": 1693500306187,
+      "parent_id": "3d148e91-5d3e-439a-b219-fa5e34c9afa7",
+      "parent_table": "block",
+      "alive": true,
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  },
+  "d9e4cafb-41e8-4ab6-ab17-0c1cb990150a": {
+    "value": {
+      "id": "d9e4cafb-41e8-4ab6-ab17-0c1cb990150a",
+      "version": 2,
+      "type": "text",
+      "format": {
+        "copied_from_pointer": {
+          "id": "756ca3ea-7917-420a-8f9c-68451a35a170",
+          "table": "block",
+          "spaceId": "087621f4-afb2-40bc-8ba2-0cac0ea0158f"
+        }
+      },
+      "created_time": 1687293329961,
+      "last_edited_time": 1687293329988,
+      "parent_id": "94fb31ed-6ddf-44f7-8221-9d9cab86948d",
+      "parent_table": "block",
+      "alive": true,
+      "copied_from": "756ca3ea-7917-420a-8f9c-68451a35a170",
+      "created_by_table": "notion_user",
+      "created_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "last_edited_by_table": "notion_user",
+      "last_edited_by_id": "ed0bd204-7c10-4452-a8dd-a826a911be4c",
+      "space_id": "0e918f1f-98ea-4848-89c6-8e12bdad9946"
+    },
+    "role": "reader"
+  }
+}

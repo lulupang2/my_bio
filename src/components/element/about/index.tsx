@@ -1,59 +1,16 @@
 "use client";
-import { AboutImage } from "@generated/images";
 import clsx from "clsx";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { NotionRenderer } from "react-notion-x";
+import "react-notion-x/src/styles.css";
 
-const About = () => {
-  const observerRef = useRef(null);
-  const isInView = useInView(observerRef);
+const About = ({ data }: any) => {
+  // const observerRef = useRef(null);
+  // const isInView = useInView(observerRef);
   const cn = (str: string) => clsx(`about-` + str);
-  const imageStyle = clsx({
-    [cn("image")]: true,
-    [cn("image-hidden")]: !isInView,
-  });
 
   return (
     <article className={cn(`container`)} id="about">
-      <div className={cn(`contents`)}>
-        <div className={cn(`wrapper`)}>
-          <h1>
-            <span>About</span> us
-          </h1>
-          <h3>
-            Web <span>Developer</span>
-          </h3>
-        </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga maxime
-          saepe repellat nemo nobis odit quibusdam repellendus recusandae. Fuga,
-          nam. Doloribus a autem quas odio quisquam nulla! Mollitia, nisi
-          eligendi.
-        </p>
-        <p>
-          2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-          maxime saepe repellat nemo nobis odit quibusdam repellendus
-          recusandae. Fuga, nam. Doloribus a autem quas odio quisquam nulla!
-          Mollitia, nisi eligendi.
-        </p>
-        <p ref={observerRef}>
-          3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-          maxime saepe repellat nemo nobis odit quibusdam repellendus
-          recusandae. Fuga, nam. Doloribus a autem quas odio quisquam nulla!
-          Mollitia, nisi eligendi.
-        </p>
-        <p>
-          4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
-          maxime saepe repellat nemo nobis odit quibusdam repellendus
-          recusandae. Fuga, nam. Doloribus a autem quas odio quisquam nulla!
-          Mollitia, nisi eligendi.
-        </p>
-      </div>
-      <div className={cn(`images`)}>
-        <div className={imageStyle}>
-          <AboutImage />
-        </div>
-      </div>
+      <NotionRenderer recordMap={data} fullPage disableHeader />
     </article>
   );
 };

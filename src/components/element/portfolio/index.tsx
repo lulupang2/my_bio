@@ -4,7 +4,6 @@ import Modal from "@components/common/modal";
 import { WorkModalProps } from "@components/common/modal/workModal";
 import WORKLISTS from "@constants/worklists";
 import { classes } from "@libs/classes";
-import { IMG_URL, THUMB_URL } from "@libs/utils";
 import {
   useModalActions,
   useModalDataActions,
@@ -19,7 +18,7 @@ import {
 } from "framer-motion";
 import _ from "lodash";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 const itemVariants: Variants = {
   offscreen: {
@@ -39,15 +38,12 @@ const itemVariants: Variants = {
 //TO-DO: 애니메이숀 적용하기
 const cn = (str: string) => classes(`portfolio-` + str);
 const Portfolio = () => {
-  const [filterData, setFilterData] = useState<WorkModalProps[]>([]);
-  const [selectedData, setSelectedData] = useState<WorkModalProps>();
+  const [filterData, setFilterData] = useState<WorkModalProps[]>(WORKLISTS);
+  const [selectedData, setSelectedData] = useState<WorkModalProps>(
+    WORKLISTS[0]
+  );
   const [selectedType, setSelectedType] = useState<string>("");
 
-  useEffect(() => {
-    const data = _.cloneDeep(WORKLISTS);
-    setFilterData(data);
-    setSelectedData(WORKLISTS[0]);
-  }, [WORKLISTS]);
   const onFilter = (tag?: string) => {
     const data = _.cloneDeep(WORKLISTS);
     let copyData = [];
