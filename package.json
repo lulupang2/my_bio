@@ -48,6 +48,5 @@
       "prettier --write",
       "eslint --fix"
     ]
-  },
-  "packageManager": "bun@1.0.3"
+  }
 }
