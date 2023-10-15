@@ -95,3 +95,16 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .nav {
+    &-menu {
+      justify-content: center;
+      &-item {
+        flex: 1;
+      }
+    }
+  }
+}
