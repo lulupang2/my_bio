@@ -1,0 +1,14 @@
+.notion {
+  &-page {
+    width: 100% !important;
+    max-width: auto !important;
+    background-color: var(--background);
+    color: var(--text);
+    &-scroller {
+      background-color: var(--background);
+    }
+  }
+  &-frame {
+    background-color: var(--background);
+  }
+}
