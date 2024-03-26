@@ -38,6 +38,7 @@ const itemVariants: Variants = {
 //TO-DO: 애니메이숀 적용하기
 const cn = (str: string) => classes(`portfolio-` + str);
 const Portfolio = () => {
+  const test = false;
   const [filterData, setFilterData] = useState<WorkModalProps[]>(WORKLISTS);
   const [selectedData, setSelectedData] = useState<WorkModalProps>(
     WORKLISTS[0]
@@ -90,35 +91,37 @@ const Portfolio = () => {
           <div className={cn("header-title")}>
             <h1>my work</h1>
           </div>
-          {/* <div className={cn("header-filter")}>
-            <input
-              type="radio"
-              name="filter"
-              id="typeAll"
-              value={""}
-              checked={selectedType === ""}
-              onChange={(e) => onFilter(e.target.value)}
-            />
-            <label htmlFor="typeAll">All</label>
-            <input
-              type="radio"
-              name="filter"
-              id="typeWork"
-              value={"work"}
-              checked={selectedType === "work"}
-              onChange={(e) => onFilter(e.target.value)}
-            />
-            <label htmlFor="typeWork">Work</label>
-            <input
-              type="radio"
-              name="filter"
-              id="typeHobby"
-              value={"hobby"}
-              checked={selectedType === "hobby"}
-              onChange={(e) => onFilter(e.target.value)}
-            />
-            <label htmlFor="typeHobby">Hobby</label>
-          </div> */}
+          {test ? (
+            <div className={cn("header-filter")}>
+              <input
+                type="radio"
+                name="filter"
+                id="typeAll"
+                value={""}
+                checked={selectedType === ""}
+                onChange={(e) => onFilter(e.target.value)}
+              />
+              <label htmlFor="typeAll">All</label>
+              <input
+                type="radio"
+                name="filter"
+                id="typeWork"
+                value={"work"}
+                checked={selectedType === "work"}
+                onChange={(e) => onFilter(e.target.value)}
+              />
+              <label htmlFor="typeWork">Work</label>
+              <input
+                type="radio"
+                name="filter"
+                id="typeHobby"
+                value={"hobby"}
+                checked={selectedType === "hobby"}
+                onChange={(e) => onFilter(e.target.value)}
+              />
+              <label htmlFor="typeHobby">Hobby</label>
+            </div>
+          ) : null}
         </div>
         <div className={cn("contents")}>
           <div

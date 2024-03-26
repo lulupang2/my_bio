@@ -96,7 +96,7 @@ const NavigationBar = () => {
           </li>
           <li
             className={cn(`menu-item`)}
-            onClick={() => onMoveToElement("contact")}
+            onClick={() => onMoveToElement("ETC")}
           >
             contact
           </li>

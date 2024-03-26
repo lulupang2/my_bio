@@ -1,0 +1,10 @@
+.ETC {
+  &-container {
+    display: grid;
+    min-height: 100svh;
+    place-items: center;
+  }
+  &-title {
+    @include text-title-bold();
+  }
+}
