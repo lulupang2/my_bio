@@ -90,7 +90,7 @@ const Portfolio = () => {
           <div className={cn("header-title")}>
             <h1>my work</h1>
           </div>
-          <div className={cn("header-filter")}>
+          {/* <div className={cn("header-filter")}>
             <input
               type="radio"
               name="filter"
@@ -118,7 +118,7 @@ const Portfolio = () => {
               onChange={(e) => onFilter(e.target.value)}
             />
             <label htmlFor="typeHobby">Hobby</label>
-          </div>
+          </div> */}
         </div>
         <div className={cn("contents")}>
           <div
