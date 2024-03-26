@@ -152,7 +152,7 @@ const Portfolio = () => {
               <motion.div
                 className={cn("item-wrapper")}
                 key={index}
-                onMouseEnter={() => onHover(item)}
+                // onMouseEnter={() => onHover(item)}
                 onClick={() => onHover(item)}
                 variants={itemVariants}
               >
