@@ -123,6 +123,9 @@
       justify-content: space-between;
       min-height: 15vh;
       border-bottom: 1px solid var(--text);
+      &:hover {
+        cursor: pointer;
+      }
     }
     &-title {
       @include text-title-thin();
